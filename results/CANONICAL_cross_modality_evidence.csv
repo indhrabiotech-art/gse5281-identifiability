@@ -1,0 +1,15 @@
+gene,modality,cohort,direction,effect,stat,source
+TNFRSF11B,Bulk mRNA (hippocampus),GSE48350 train (n=49),UP in AD,Cohen d = 1.221,logistic beta +0.4394,this study
+TNFRSF11B,Bulk mRNA (hippocampus),GSE5281 external (n=23),UP in AD,Cohen d = 0.345,single-gene AUC 0.642,this study
+TNFRSF11B,Model importance,GSE48350,rank 1 of 3,SHAP 0.882; XGB gain 0.506,cross-model core rank 1,this study
+TNFRSF11B,CSF protein (OPG),BioFINDER (n=1019),UP in AD,d = 0.20,q = 3.75e-8,Whelan 2019 Acta Neuropathol Commun 7:169
+TNFRSF11B,CSF protein (OPG),BioFINDER Ab-neg MCI,UP,d = 0.23,q = 0.004,Whelan 2019 (raised in Ab-NEGATIVE MCI)
+TNFRSF11B,Plasma protein (OPG),Italian AD/VaD/control,UP in AD,OR = 2.17,95% CI 1.18-3.99; P = 0.0126,Bruno 2004 PMID 15138623
+TNFRSF11B,CSF protein vs TSPO PET,AD neuroinflammation study,positive corr.,strong corr. with TSPO,weaker vs amyloid/tau PET,PMC12035552
+ABCA6,Bulk mRNA (hippocampus),GSE48350 train,UP in AD,Cohen d = 1.089,logistic beta +0.4754,this study
+ABCA6,Bulk mRNA - oligo assoc.,GSE48350 train (V4),pos. with oligo score,rho = +0.372,p = 0.0085,this study
+ABCA6,snRNA-seq (oligodendrocyte),GSE138852 pseudobulk,UP in AD oligo,~6-fold; d = 1.59,perm p = 0.2 (3v3 floor 0.1),this study
+ABCA6,snRNA-seq meta-analysis,multi-dataset human AD,UP in AD oligo,listed among elevated OL genes,n/a,Pandey 2022 Cell Rep 40:111189
+CRLF1,Bulk mRNA (hippocampus),GSE48350 train,UP in AD,Cohen d = 1.055,logistic beta +0.3797,this study
+CRLF1,Bulk mRNA (hippocampus),GSE5281 external,UP (weak),Cohen d = 0.059,single-gene AUC 0.569,this study
+CRLF1,Literature,-,not reported,no AD literature found,n/a,search 2026-08

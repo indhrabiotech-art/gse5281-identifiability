@@ -1,0 +1,199 @@
+submission_date,metadata_field,metadata_value,n
+Jul 10 2006,!Sample_contact_name,"Winnie,,Liang",74
+Oct 19 2007,!Sample_contact_name,"Winnie,,Liang",87
+Jul 10 2006,!Sample_contact_email,wliang@tgen.org,74
+Oct 19 2007,!Sample_contact_email,wliang@tgen.org,87
+Jul 10 2006,!Sample_contact_institute,Translational Genomics,74
+Oct 19 2007,!Sample_contact_institute,Translational Genomics,87
+Jul 10 2006,!Sample_contact_address,445 N. Fifth Street,74
+Oct 19 2007,!Sample_contact_address,445 N. Fifth Street,87
+Jul 10 2006,!Sample_contact_city,Phoenix,74
+Oct 19 2007,!Sample_contact_city,Phoenix,87
+Jul 10 2006,!Sample_contact_country,USA,74
+Oct 19 2007,!Sample_contact_country,USA,87
+Jul 10 2006,!Sample_extract_protocol_ch1,Arcturus PicoPure,13
+Jul 10 2006,!Sample_extract_protocol_ch1,,61
+Oct 19 2007,!Sample_extract_protocol_ch1,Arcturus PicoPure,78
+Oct 19 2007,!Sample_extract_protocol_ch1,Arcturus PicoPurebo,9
+Jul 10 2006,!Sample_label_protocol_ch1,Affymetrix double-round expression profiling,13
+Jul 10 2006,!Sample_label_protocol_ch1,,61
+Oct 19 2007,!Sample_label_protocol_ch1,Affymetrix double-round expression profiling,87
+Jul 10 2006,!Sample_hyb_protocol,Affymetrix's manufacturer's protocol: hybridization onto Affymetrix Human Genome U133 Plus 2.0 array,13
+Jul 10 2006,!Sample_hyb_protocol,,61
+Oct 19 2007,!Sample_hyb_protocol,Affymetrix's manufacturer protocol: hybridization onto Affymetrix Human Genome U133 Plus 2.0 array,1
+Oct 19 2007,!Sample_hyb_protocol,Affymetrix's manufacturer's protocol: hybridization onto Affymetrix Human Genome U133 Plus 2.0 array,86
+Jul 10 2006,!Sample_scan_protocol,Affymetrix GCOS,13
+Jul 10 2006,!Sample_scan_protocol,,61
+Oct 19 2007,!Sample_scan_protocol,Affymetrix GCOS,87
+Jul 10 2006,!Sample_label_ch1,,74
+Oct 19 2007,!Sample_label_ch1,biotin,87
+Jul 10 2006,!Sample_data_processing,,74
+Oct 19 2007,!Sample_data_processing,"MAS5.0, target scaling to 150",1
+Oct 19 2007,!Sample_data_processing,MAS5.0; target scaling to 150,86
+Jul 10 2006,!Sample_platform_id,GPL570,74
+Oct 19 2007,!Sample_platform_id,GPL570,87
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119615/suppl/GSM119615.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119616/suppl/GSM119616.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119617/suppl/GSM119617.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119618/suppl/GSM119618.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119619/suppl/GSM119619.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119620/suppl/GSM119620.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119621/suppl/GSM119621.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119622/suppl/GSM119622.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119623/suppl/GSM119623.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119624/suppl/GSM119624.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119625/suppl/GSM119625.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119626/suppl/GSM119626.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119627/suppl/GSM119627.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119628/suppl/GSM119628.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119629/suppl/GSM119629.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119630/suppl/GSM119630.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119631/suppl/GSM119631.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119632/suppl/GSM119632.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119633/suppl/GSM119633.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119634/suppl/GSM119634.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119635/suppl/GSM119635.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119636/suppl/GSM119636.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119637/suppl/GSM119637.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119638/suppl/GSM119638.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119639/suppl/GSM119639.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119640/suppl/GSM119640.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119641/suppl/GSM119641.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119642/suppl/GSM119642.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119643/suppl/GSM119643.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119644/suppl/GSM119644.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119645/suppl/GSM119645.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119646/suppl/GSM119646.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119647/suppl/GSM119647.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119648/suppl/GSM119648.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119649/suppl/GSM119649.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119650/suppl/GSM119650.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119651/suppl/GSM119651.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119652/suppl/GSM119652.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119653/suppl/GSM119653.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119654/suppl/GSM119654.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119655/suppl/GSM119655.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119656/suppl/GSM119656.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119657/suppl/GSM119657.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119658/suppl/GSM119658.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119659/suppl/GSM119659.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119660/suppl/GSM119660.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119661/suppl/GSM119661.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119662/suppl/GSM119662.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119663/suppl/GSM119663.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119664/suppl/GSM119664.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119665/suppl/GSM119665.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119666/suppl/GSM119666.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119667/suppl/GSM119667.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119668/suppl/GSM119668.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119669/suppl/GSM119669.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119670/suppl/GSM119670.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119671/suppl/GSM119671.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119672/suppl/GSM119672.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119673/suppl/GSM119673.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119674/suppl/GSM119674.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119675/suppl/GSM119675.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119676/suppl/GSM119676.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119677/suppl/GSM119677.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119678/suppl/GSM119678.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119679/suppl/GSM119679.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119680/suppl/GSM119680.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119681/suppl/GSM119681.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119682/suppl/GSM119682.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119683/suppl/GSM119683.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119684/suppl/GSM119684.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119685/suppl/GSM119685.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119686/suppl/GSM119686.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119687/suppl/GSM119687.CEL.gz,1
+Jul 10 2006,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM119nnn/GSM119688/suppl/GSM119688.CEL.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238763/suppl/GSM238763.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238790/suppl/GSM238790.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238791/suppl/GSM238791.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238792/suppl/GSM238792.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238793/suppl/GSM238793.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238794/suppl/GSM238794.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238795/suppl/GSM238795.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238796/suppl/GSM238796.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238797/suppl/GSM238797.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238798/suppl/GSM238798.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238799/suppl/GSM238799.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238800/suppl/GSM238800.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238801/suppl/GSM238801.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238802/suppl/GSM238802.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238803/suppl/GSM238803.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238804/suppl/GSM238804.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238805/suppl/GSM238805.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238806/suppl/GSM238806.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238807/suppl/GSM238807.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238808/suppl/GSM238808.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238809/suppl/GSM238809.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238810/suppl/GSM238810.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238811/suppl/GSM238811.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238812/suppl/GSM238812.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238813/suppl/GSM238813.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238815/suppl/GSM238815.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238816/suppl/GSM238816.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238817/suppl/GSM238817.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238818/suppl/GSM238818.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238819/suppl/GSM238819.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238820/suppl/GSM238820.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238821/suppl/GSM238821.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238822/suppl/GSM238822.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238823/suppl/GSM238823.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238824/suppl/GSM238824.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238825/suppl/GSM238825.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238826/suppl/GSM238826.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238827/suppl/GSM238827.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238834/suppl/GSM238834.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238835/suppl/GSM238835.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238837/suppl/GSM238837.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238838/suppl/GSM238838.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238839/suppl/GSM238839.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238840/suppl/GSM238840.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238841/suppl/GSM238841.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238842/suppl/GSM238842.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238843/suppl/GSM238843.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238844/suppl/GSM238844.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238845/suppl/GSM238845.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238846/suppl/GSM238846.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238847/suppl/GSM238847.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238848/suppl/GSM238848.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238851/suppl/GSM238851.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238854/suppl/GSM238854.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238855/suppl/GSM238855.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238856/suppl/GSM238856.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238857/suppl/GSM238857.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238858/suppl/GSM238858.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238860/suppl/GSM238860.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238861/suppl/GSM238861.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238862/suppl/GSM238862.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238863/suppl/GSM238863.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238864/suppl/GSM238864.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238865/suppl/GSM238865.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238867/suppl/GSM238867.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238868/suppl/GSM238868.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238870/suppl/GSM238870.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238871/suppl/GSM238871.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238872/suppl/GSM238872.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238873/suppl/GSM238873.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238874/suppl/GSM238874.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238875/suppl/GSM238875.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238877/suppl/GSM238877.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238941/suppl/GSM238941.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238942/suppl/GSM238942.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238943/suppl/GSM238943.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238944/suppl/GSM238944.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238945/suppl/GSM238945.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238946/suppl/GSM238946.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238947/suppl/GSM238947.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238948/suppl/GSM238948.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238949/suppl/GSM238949.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238951/suppl/GSM238951.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238952/suppl/GSM238952.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238953/suppl/GSM238953.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238955/suppl/GSM238955.CHP.gz,1
+Oct 19 2007,!Sample_supplementary_file,ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM238nnn/GSM238963/suppl/GSM238963.CHP.gz,1
+Jul 10 2006,!Sample_relation,Reanalyzed by: GSE133349,74
+Oct 19 2007,!Sample_relation,Reanalyzed by: GSE133349,87
+Jul 10 2006,!Sample_series_id,GSE5281,74
+Oct 19 2007,!Sample_series_id,GSE5281,87

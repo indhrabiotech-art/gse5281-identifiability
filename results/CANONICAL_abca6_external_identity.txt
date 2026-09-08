@@ -1,0 +1,20 @@
+ABCA6-ALONE vs THREE-GENE, EXTERNAL (GSE5281, n=23)
+
+  ABCA6 only      ROC-AUC = 0.6615384615
+  three-gene      ROC-AUC = 0.6615384615
+  Spearman(predictions) = 0.240356
+
+Different prediction vectors, identical AUC (86/130 concordant pairs).
+At n=23 the AUC quantum is 1/130, so exact identity is attainable.
+NOT a file collision - verified by refitting both models independently.
+
+Context from ablation (external):
+  ABCA6                    0.661538
+  ABCA6 + TNFRSF11B        0.730769
+  ABCA6 + CRLF1            0.646154
+  ABCA6 + CRLF1 + TNFRSF11B 0.661538
+
+INTERPRETATION: externally, the panel adds nothing over ABCA6 alone.
+TNFRSF11B alone improves it; CRLF1 cancels that gain.
+Report factually. Do NOT use to justify post-hoc panel reduction
+(that would be external leakage).

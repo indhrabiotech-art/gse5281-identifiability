@@ -1,0 +1,9 @@
+metric,value
+ROC_AUC,0.2692307692307692
+Accuracy,0.5652173913043478
+Sensitivity,0.0
+Specificity,1.0
+TN,13.0
+FP,0.0
+FN,10.0
+TP,0.0

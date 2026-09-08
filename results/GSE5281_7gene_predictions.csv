@@ -1,0 +1,24 @@
+index,title,source,age_text,Age_years,diagnosis,Age_used_years,age_qc_note,observed_class,predicted_probability_AD,predicted_class
+GSM119628,HIP control 1,"brain, hippocampus",Age: 85 days,0.2327173169062286,Control,85.0,GEO metadata reports 85 days; case ID H119628M85N and independent GSE5281 cohort records support 85 years.,Control,0.004195619617316895,Control
+GSM119629,HIP control 2,"brain, hippocampus",Age: 80 years,80.0,Control,80.0,,Control,0.0019148897929088392,Control
+GSM119630,HIP control 3,"brain, hippocampus",Age: 80 years,80.0,Control,80.0,,Control,0.019266422555565054,Control
+GSM119631,HIP control 4,"brain, hippocampus",Age: 102 years,102.0,Control,102.0,,Control,0.002248386009980356,Control
+GSM119632,HIP control 5,"brain, hippocampus",Age: 63 years,63.0,Control,63.0,,Control,0.046704981869241574,Control
+GSM119633,HIP control 6,"brain, hippocampus",Age: 79 years,79.0,Control,79.0,,Control,0.008260561772736276,Control
+GSM119634,HIP control 7,"brain, hippocampus",Age: 76 years,76.0,Control,76.0,,Control,0.0008761765426166585,Control
+GSM119635,HIP control 8,"brain, hippocampus",Age: 83 years,83.0,Control,83.0,,Control,0.0029588281558459123,Control
+GSM119636,HIP control 9,"brain, hippocampus",Age: 79 years,79.0,Control,79.0,,Control,0.0063991094566075955,Control
+GSM119637,HIP control 10,"brain, hippocampus",Age: 88 years,88.0,Control,88.0,,Control,0.003500501363952067,Control
+GSM119638,HIP control 11,"brain, hippocampus",Age: 73 years,73.0,Control,73.0,,Control,0.004975044255110892,Control
+GSM119639,HIP control 12,"brain, hippocampus",Age: 69 years,69.0,Control,69.0,,Control,0.002131765013445233,Control
+GSM119640,HIP control 13,"brain, hippocampus",Age: 78 years,78.0,Control,78.0,,Control,0.0034453942881228017,Control
+GSM238799,HIP_affected_1,"brain, Hippocampus",age: 72 years,72.0,AD,72.0,,AD,0.002421161019916258,Control
+GSM238800,HIP_affected_2,"brain, Hippocampus",age: 73 years,73.0,AD,73.0,,AD,0.0014158898858160458,Control
+GSM238801,HIP_affected_3,"brain, Hippocampus",age: 75 years,75.0,AD,75.0,,AD,0.009580938650785945,Control
+GSM238802,HIP_affected_4,"brain, Hippocampus",age: 70 years,70.0,AD,70.0,,AD,0.0012918239992922133,Control
+GSM238803,HIP_affected_5,"brain, Hippocampus",age: 85 years,85.0,AD,85.0,,AD,0.002340458548845465,Control
+GSM238804,HIP_affected_6,"brain, Hippocampus",age: 77 years,77.0,AD,77.0,,AD,0.0014175411899845778,Control
+GSM238805,HIP_affected_7,"brain, Hippocampus",age: 79 years,79.0,AD,79.0,,AD,0.0020824171907042827,Control
+GSM238806,HIP_affected_8,"brain, Hippocampus",age: 88 years,88.0,AD,88.0,,AD,0.000796030391641419,Control
+GSM238807,HIP_affected_9,"brain, Hippocampus",age: 81 years,81.0,AD,81.0,,AD,0.001104330632298072,Control
+GSM238808,HIP_affected_10,"brain, Hippocampus",age: 78 years,78.0,AD,78.0,,AD,0.007334799639578848,Control

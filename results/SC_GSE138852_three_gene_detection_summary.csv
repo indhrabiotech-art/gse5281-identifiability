@@ -1,0 +1,4 @@
+Gene,Present_in_matrix,Cells_with_nonzero_expression,Detection_fraction,Mean_expression,Median_expression
+ABCA6,True,533,0.04033600726502195,0.04858483426668685,0.0
+CRLF1,True,548,0.041471166944150144,0.04419555017405782,0.0
+TNFRSF11B,False,0,0.0,,

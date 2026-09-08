@@ -1,0 +1,9 @@
+comparator,comp_auc,sig_added_chi2,sig_added_p,comp_added_chi2,comp_added_p,signature_auc_oof
+Age,0.741,25.501,4.421e-07,13.83,0.0002001,0.835
+astrocyte_score,0.763,10.208,0.001399,1.478,0.2241,0.835
+neuron_score,0.753,8.459,0.003632,1.286,0.2568,0.835
+endothelial_score,0.62,16.127,5.922e-05,0.07,0.7917,0.835
+microglia_score,0.551,17.551,2.797e-05,0.076,0.7823,0.835
+OPC_score,0.551,16.991,3.755e-05,0.051,0.8206,0.835
+oligodendrocyte_score,0.549,17.057,3.627e-05,0.0,0.9961,0.835
+composition PC1-2,,10.938,0.00094226,,,0.835

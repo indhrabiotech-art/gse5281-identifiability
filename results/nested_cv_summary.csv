@@ -1,0 +1,2 @@
+outer_folds,repeats,iterations,mean_AUC,median_AUC,SD_AUC,AUC_2.5pct,AUC_97.5pct,mean_AP,median_AP,ABCA6_selection_frequency,CRLF1_selection_frequency,TNFRSF11B_selection_frequency
+5,50,250,0.7565396825396825,0.7619047619047619,0.16452939375379702,0.39781746031746035,1.0,0.6893089947089948,0.6805555555555556,0.44,0.504,0.628

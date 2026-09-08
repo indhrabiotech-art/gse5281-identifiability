@@ -1,0 +1,24 @@
+Evidence_layer,Metric_or_finding,Result,Interpretation,Claim_status
+Metadata confounding,Control submission cohort,13 controls submitted Jul 10 2006,All hippocampal controls belong to the 2006 submission cohort,SUPPORTED
+Metadata confounding,AD submission cohort,10 AD submitted Oct 19 2007,All hippocampal AD samples belong to the 2007 submission cohort,SUPPORTED
+Metadata confounding,Diagnosis equals submission cohort,TRUE,Diagnosis is perfectly nested within submission cohort,SUPPORTED
+Design identifiability,Design matrix,Intercept + Diagnosis + Submission cohort,Diagnosis and submission cohort were specified as separate effects,SUPPORTED
+Design identifiability,Design dimensions,23 x 3,23 hippocampal samples and 3 design columns,SUPPORTED
+Design identifiability,Matrix rank,2,The design is rank deficient,SUPPORTED
+Design identifiability,Independent estimation,Impossible,Diagnosis and submission cohort cannot be independently estimated,SUPPORTED
+Expression structure,PC1 variance explained,26.9694%,PC1 captures a substantial component of transcriptome-wide expression variation,SUPPORTED
+Expression structure,PC2 variance explained,9.3987%,PC2 captures an additional component of transcriptome-wide expression variation,SUPPORTED
+Expression structure,PC1 + PC2 variance explained,36.3681%,The first two PCs capture a substantial fraction of total expression variation,SUPPORTED
+Expression-diagnosis association,PC1 diagnosis AUC,0.1154,PC1 strongly separates the two diagnosis groups in the opposite score direction,SUPPORTED
+Expression-diagnosis association,PC2 diagnosis AUC,0.9077,PC2 strongly separates diagnosis groups and is aligned with the submission-cohort structure,SUPPORTED
+Expression-diagnosis association,PC2 Mann-Whitney p,0.0011303,PC2 distributions differ significantly between diagnosis groups,SUPPORTED
+Expression-diagnosis association,PC2 Spearman p,0.0001959,PC2 is significantly associated with diagnosis,SUPPORTED
+Expression separation,Cohort classifier LOOCV AUC,1.000,Transcriptome expression perfectly separates the two submission cohorts under LOOCV,SUPPORTED
+Expression separation,Cohort classifier LOOCV accuracy,1.000,All 23 hippocampal samples were correctly assigned to submission cohort,SUPPORTED
+Workflow metadata,Workflow-related fields differing,6 of 6 tested,All six tested workflow-related metadata fields were present for the AD cohort but missing for the control cohort,SUPPORTED
+Workflow metadata,Workflow equivalence,Not directly confirmable,Missing control metadata prevent direct confirmation of workflow equivalence,SUPPORTED AS A LIMIT
+Interpretation,Batch artifact as sole explanation,Not established,The observed cohort separation does not prove that all disease-associated discrimination is technical,SUPPORTED AS A LIMIT
+Interpretation,Biological signal absent,Not established,The analysis does not demonstrate absence of biological signal,NOT SUPPORTED
+Interpretation,Clean independent biological validation,Not supported,Diagnosis cannot be independently separated from submission cohort within this subset,NOT SUPPORTED
+Interpretation,Appropriate terminology,Cross-dataset transfer test,The GSE5281 analysis should be described as transfer-test performance,PREFERRED
+Interpretation,Clinical validation,Not established,The GSE5281 analysis does not constitute clinical validation,NOT SUPPORTED

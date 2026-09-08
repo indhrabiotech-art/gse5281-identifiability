@@ -1,0 +1,31 @@
+/home/bharathwaj/project_ml/.venv_ml/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1403: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/bharathwaj/project_ml/.venv_ml/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1429: UserWarning: Inconsistent values: penalty=l1 with l1_ratio=0.0. penalty is deprecated. Please use l1_ratio only.
+  warnings.warn(
+========================================================================
+RAW EXTERNAL GSE5281 PERMUTATION TEST
+========================================================================
+Raw expression file: 03_Preprocessing/GSE5281_RMA_genelevel.csv
+External samples: 23
+AD: 10
+Control: 13
+
+Observed RAW external AUC: 0.661538
+PASS: raw AUC reproduces canonical 0.661538.
+
+Permutations: 10000
+RAW empirical two-sided p-value: 0.206279
+
+Null distribution:
+Mean:    0.498131
+Median:  0.500000
+2.5%:    0.253846
+97.5%:   0.746154
+
+Saved:
+04_ML/External_Validation/GSE5281_RAW_3gene_permutation_test.csv
+04_ML/External_Validation/GSE5281_RAW_3gene_permutation_auc_distribution.csv
+
+========================================================================
+RAW PERMUTATION TEST COMPLETE
+========================================================================

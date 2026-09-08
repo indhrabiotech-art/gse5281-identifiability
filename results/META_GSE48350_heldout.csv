@@ -1,0 +1,14 @@
+index,Title,Individual,Brain_region,Sex,Age,Diagnosis,subject_group_id
+GSM1176221,hippocampus_male_76_AD_33,33,hippocampus,male,76,AD,AD_male_76_33
+GSM300298,Hippocampus_female_30yrs_indiv82,82,hippocampus,female,30,Control,Control_female_30_82
+GSM300193,Hippocampus_female_99yrs_indiv2,2,hippocampus,female,99,Control,Control_female_99_2
+GSM1176218,hippocampus_female_90_AD_36,36,hippocampus,female,90,AD,AD_female_90_36
+GSM300235,Hippocampus_male_85yrs_indiv46,46,hippocampus,male,85,Control,Control_male_85_46
+GSM300239,Hippocampus_female_70yrs_indiv47,47,hippocampus,female,70,Control,Control_female_70_47
+GSM300276,Hippocampus_male_20yrs_indiv77,77,hippocampus,male,20,Control,Control_male_20_77
+GSM1176217,hippocampus_female_90_AD_23,23,hippocampus,female,90,AD,AD_female_90_23
+GSM1176225,hippocampus_male_85_AD_51,51,hippocampus,male,85,AD,AD_male_85_51
+GSM300215,Hippocampus_male_97yrs_indiv34,34,hippocampus,male,97,Control,Control_male_97_34
+GSM300262,Hippocampus_male_52yrs_indiv71,71,hippocampus,male,52,Control,Control_male_52_71
+GSM300169,Hippocampus_male_82yrs_indiv106,106,hippocampus,male,82,Control,Control_male_82_106
+GSM300272,Hippocampus_female_26yrs_indiv76,76,hippocampus,female,26,Control,Control_female_26_76

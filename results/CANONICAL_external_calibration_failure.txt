@@ -1,0 +1,31 @@
+EXTERNAL CALIBRATION FAILURE — LOCKED L1 MODEL ON RAW GSE5281
+
+PREDICTED PROBABILITIES (n=23, observed AD prevalence 0.4348)
+  min 0.001865  q25 0.002059  median 0.002567  q75 0.003024  max 0.006758
+  mean 0.002854   sd 0.001176
+  by label: AD mean 0.003023 (max 0.005727)
+            Control mean 0.002724 (max 0.006758)
+  predicted class: 0 for ALL 23 samples
+  locked threshold 0.3296990886390392 — unreachable by two orders of magnitude
+
+METRICS
+  ROC-AUC 0.661538   Brier 0.432163   calibration intercept 7.190218
+
+RAW vs HARMONIZED
+                    mean_pred   observed   Brier     AUC
+  raw                0.002854   0.434783   0.4322   0.6615
+  harmonized         0.393286   0.434783   0.2287   0.6846
+
+INTERPRETATION
+  Discrimination transports; the probability scale does not.
+  Harmonization is primarily a CALIBRATION correction (Brier 0.432 -> 0.229),
+  not a discrimination gain (+0.023 AUC).
+  Consistent with the day-0 cross-dataset scale shift
+  (GSE48350 global mean 6.50 vs GSE5281 4.00).
+
+REPORTING RULES
+  - DO NOT report sensitivity/specificity/PPV/NPV for the raw external model.
+    They describe a degenerate all-negative classifier.
+  - DO report the calibration failure explicitly. It is a finding.
+  - DO reframe harmonization as a calibration fix in Methods/Results.
+  - Threshold-based external performance requires recalibration first.

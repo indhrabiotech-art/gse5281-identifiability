@@ -1,0 +1,120 @@
+MANUSCRIPT DATA FILES
+Generated Friday 21 August 2026 05:29:37 PM IST
+
+CANONICAL_*        authoritative values for every reported number
+GSE5281_*          transfer-test performance and cohort confounding
+PREDICTIONS_*      per-sample predicted probabilities
+nested_cv_*        internal performance and selection stability
+GSE48350_celltype* cell-composition analysis
+baseline_*         age and sex baselines
+Table_*            manuscript tables
+GO_/KEGG_/Reactome_/STRING_  enrichment (report STRING null result)
+SC_                single-cell GSE138852
+CT_                cross-tissue blood
+META_              cohort metadata
+TEXT/              drafted manuscript sections
+
+FILES:
+  AP_RESOLUTION.txt
+  baseline_age_summary.csv
+  baseline_auc_table.csv
+  baseline_incremental_test.csv
+  baseline_score_vs_age.csv
+  CANONICAL_abca6_external_identity.txt
+  CANONICAL_ablation_LOCKED_MODEL.csv
+  CANONICAL_calibration_LOCKED_MODEL.csv
+  CANONICAL_claim_status.csv
+  CANONICAL_confounder_evidence.csv
+  CANONICAL_cross_modality_evidence.csv
+  CANONICAL_external_calibration_failure.txt
+  CANONICAL_external_metrics.csv
+  CANONICAL_model_spec.txt
+  CANONICAL_preprocessing_provenance.csv
+  CANONICAL_stability_labels.csv
+  CANONICAL_threshold_performance_LOCKED_MODEL.csv
+  celltype_incremental_cv.csv
+  CT_GSE63060_three_gene_incremental_coefficients.csv
+  CT_GSE63060_three_gene_signature_scores.csv
+  CT_GSE63061_two_gene_signature_scores.csv
+  GO_Biological_Process_3gene.csv
+  GO_Molecular_Function_3gene.csv
+  GSE48350_celltype_score_diagnostics.csv
+  GSE48350_celltype_scores.csv
+  GSE48350_gene_oligodendrocyte_correlations.csv
+  GSE48350_oligodendrocyte_adjusted_models.csv
+  GSE48350_oligodendrocyte_confounder_summary.csv
+  GSE5281_3gene_bootstrap_auc.csv
+  GSE5281_3gene_permutation_test.csv
+  GSE5281_3gene_raw_vs_harmonized_robustness.csv
+  GSE5281_ALL_SAMPLE_submission_date_counts.csv
+  GSE5281_ALL_SAMPLE_submission_structure.csv
+  GSE5281_cohort_PCA_scores_audit.csv
+  GSE5281_cohort_separation_MASTER_summary.csv
+  GSE5281_cross_dataset_distribution.csv
+  GSE5281_cross_dataset_effect_sizes.csv
+  GSE5281_design_identifiability_audit.csv
+  GSE5281_expression_cohort_classifier_predictions.csv
+  GSE5281_hippocampus_batch_metadata_audit.csv
+  GSE5281_hippocampus_SOFT_complete_metadata.csv
+  GSE5281_locked_model_coefficients.csv
+  GSE5281_PC_diagnosis_association_audit.csv
+  GSE5281_RAW_3gene_permutation_test.csv
+  GSE5281_submission_cohort_composition.csv
+  GSE5281_submission_date_diagnosis_table.csv
+  GSE5281_technical_cohort_metadata_audit.csv
+  GSE5281_workflow_group_difference_audit.csv
+  INDEX.txt
+  KEGG_3gene.csv
+  META_GSE48350_heldout.csv
+  META_GSE48350_train.csv
+  META_GSE5281.csv
+  nested_cv_feature_selection_frequency.csv
+  nested_cv_results.csv
+  nested_cv_summary.csv
+  PREDICTIONS_heldout.csv
+  PREDICTIONS_training.csv
+  PREDICTIONS_transfer_harmonized.csv
+  PREDICTIONS_transfer_raw.csv
+  RAW_PERMUTATION.txt
+  Reactome_3gene.csv
+  SC_GSE138852_ABCA6_CRLF1_celltype_summary.csv
+  SC_GSE138852_ABCA6_CRLF1_pseudobulk.csv
+  SC_GSE138852_ABCA6_CRLF1_pseudobulk_statistics.csv
+  SC_GSE138852_ABCA6_CRLF1_publication_effects.csv
+  SC_GSE138852_celltype_composition.csv
+  SC_GSE138852_composition_ABCA6_CRLF1_correlation.csv
+  SC_GSE138852_composition_expression_library_table.csv
+  SC_GSE138852_three_gene_celltype_expression.csv
+  SC_GSE138852_three_gene_detection_summary.csv
+  STRING_FINAL_THREE_GENE_MECHANISTIC_EVIDENCE.csv
+  STRING_FINAL_THREE_GENE_MECHANISTIC_MODULES.csv
+  STRING_STRING_ABCA6_neighborhood_enrichment.csv
+  STRING_STRING_CRLF1_neighborhood_enrichment.csv
+  STRING_STRING_gene_specific_neighborhood_enrichment.csv
+  STRING_STRING_gene_specific_significant_enrichment.csv
+  STRING_STRING_seed_gene_edges.csv
+  STRING_STRING_shared_neighbors.csv
+  STRING_STRING_shared_neighbor_summary.csv
+  STRING_STRING_significant_enrichment_FDR05.csv
+  STRING_STRING_three_gene_first_shell_enrichment.csv
+  STRING_STRING_three_gene_first_shell_enrichment_raw.tsv
+  STRING_STRING_three_gene_first_shell_network.csv
+  STRING_STRING_three_gene_first_shell_raw.tsv
+  STRING_STRING_three_gene_functional_enrichment.csv
+  STRING_STRING_three_gene_functional_enrichment_raw.tsv
+  STRING_STRING_three_gene_network.tsv
+  STRING_STRING_TNFRSF11B_neighborhood_enrichment.csv
+  SUPERSEDED_calibration_meanZscore_PlattScaled.csv
+  Table_3gene_coefficients.csv
+  Table_3gene_gene_statistics.csv
+  Table_Cohort_Confounding_Evidence.csv
+  Table_final_blood_model_evidence.csv
+  Table_final_claim_audit.csv
+  Table_final_cross_model_concordance.csv
+  Table_final_model_performance.csv
+  Table_final_paired_ablation_delta_auc.csv
+  Table_final_robustness.csv
+  Table_final_three_gene_xgboost_shap.csv
+  Table_harmonization_audit.csv
+  Table_raw_vs_harmonized.csv
+  TEXT

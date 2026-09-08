@@ -1,0 +1,7 @@
+variable,control_values,AD_values,identical_between_groups
+extract_protocol_ch1,MISSING,Arcturus PicoPure,False
+label_ch1,MISSING,biotin,False
+label_protocol_ch1,MISSING,Affymetrix double-round expression profiling,False
+hyb_protocol,MISSING,Affymetrix's manufacturer's protocol: hybridization onto Affymetrix Human Genome U133 Plus 2.0 array,False
+scan_protocol,MISSING,Affymetrix GCOS,False
+data_processing,MISSING,MAS5.0; target scaling to 150,False

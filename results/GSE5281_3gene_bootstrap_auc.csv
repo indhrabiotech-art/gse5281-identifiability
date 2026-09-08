@@ -1,0 +1,2 @@
+observed_auc,bootstrap_mean_auc,ci_lower_95,ci_upper_95,n_external,n_ad,n_control
+0.6846153846153846,0.6843631440626796,0.4416666666666667,0.8863636363636364,23,10,13

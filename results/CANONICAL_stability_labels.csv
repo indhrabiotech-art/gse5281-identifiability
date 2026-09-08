@@ -1,0 +1,4 @@
+procedure,ABCA6,CRLF1,TNFRSF11B,label_to_use_in_manuscript
+LASSO stability selection (50 repeated CV folds, C=0.3),0.52,0.52,0.50,"LASSO stability selection frequency"
+LASSO bootstrap (positive-coefficient frequency),0.0915,0.0565,0.1515,"LASSO bootstrap selection frequency"
+Nested CV (5-fold x 50 repeats; selection inside outer folds),0.440,0.504,0.628,"Nested cross-validation selection frequency"

@@ -1,0 +1,11 @@
+claim,evidence,status
+Signature carries information independent of age,"chi2=25.5, p=4.4e-07 (train)",SUPPORTED
+Signature independent of bulk cell-type composition,"chi2=10.9, p=9.4e-04 vs composition PC1-2",SUPPORTED
+No cell-type score adds over the signature,all 6 comparators p>0.22,SUPPORTED
+Oligodendrocyte composition is not the driver,oligo AUC 0.549; delta AUC ~0 when added,SUPPORTED
+ABCA6 associates with oligodendrocyte content,"rho=+0.372, p=0.0085 (bulk); 6-fold in GSE138852 AD oligo",SUPPORTED (needs independent scRNA replication)
+Signature IMPROVES discrimination over composition,"delta AUC +0.037, 95% CI -0.19 to +0.24",NOT SUPPORTED
+Three-gene model superior to ABCA6+TNFRSF11B,external 0.662 vs 0.731; P(delta>0)=0.736,NOT SUPPORTED
+External validation statistically significant,permutation p=0.145 (harmonized),NOT SUPPORTED
+Joint test vs all 6 cell types,singular Hessian; EPV=2.5,NOT ESTIMABLE at n=49
+Stability selection cleanly identified these 3 genes,"nested CV: TNFRSF11B 0.628, CRLF1 0.504, ABCA6 0.440 (6th)",ATTENUATE - only TNFRSF11B stands out

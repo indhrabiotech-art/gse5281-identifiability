@@ -1,0 +1,6 @@
+model,features,n,AUC,AP
+three_gene,three_gene_score,49,0.8549019607843137,0.8257309048975716
+oligo_only,oligodendrocyte_score,49,0.5490196078431373,0.37367559143421214
+three_gene_plus_oligo,three_gene_score;oligodendrocyte_score,49,0.8529411764705882,0.8238261429928095
+three_gene_plus_age,three_gene_score;Age,49,0.9509803921568627,0.923981669296071
+three_gene_plus_age_oligo,three_gene_score;Age;oligodendrocyte_score,49,0.9490196078431372,0.9228322440087147

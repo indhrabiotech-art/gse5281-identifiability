@@ -1,0 +1,15 @@
+LOCKED CANONICAL MODEL
+  LogisticRegression(penalty="l1", solver="liblinear", C=0.3,
+                     max_iter=10000, random_state=42)
+  StandardScaler fitted on TRAINING ONLY; external transformed with
+  training-derived parameters.
+  Genes: ABCA6, CRLF1, TNFRSF11B
+
+AUDIT SCRIPTS (13_Baselines/scripts/03,04,05)
+  LogisticRegression(default L2, liblinear/lbfgs)
+  Used only for confounder comparison, NOT for canonical performance.
+
+CONSEQUENCE
+  Out-of-fold 0.835 (L2) vs canonical apparent 0.855 (L1, C=0.3) differ
+  because of REGULARIZATION, not data. Document in Methods so the gap is
+  not read as an inconsistency.

@@ -1,0 +1,7 @@
+label,matrix,n,split,age_adjusted,train_auc,note
+canonical (locked),train_top25var_age_adjusted,49,train-only,yes,0.854902,canonical manuscript value
+V4 clean rerun,train49_age_adjusted_FULL,49,train-only,yes,0.854902,reproduces canonical exactly
+out-of-fold,train_top25var_age_adjusted,49,train-only,yes,0.835,20x repeated 5-fold OOF score
+nested CV (honest internal),train_top25var_age_adjusted,49,nested 5x50,yes,0.757,SD 0.165; 95% range 0.398-1.000
+V3 superseded,RMA_ML_matrix,62,POOLED train+test,no,0.934314,INFLATED: pooling + residual age. Do not cite.
+controls-only age adj,controls_only_age_adjusted,49,train-only,controls-only,0.909804,alternative adjustment; sensitivity analysis

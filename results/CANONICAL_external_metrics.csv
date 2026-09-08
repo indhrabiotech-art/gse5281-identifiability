@@ -1,0 +1,4 @@
+pipeline,prediction_file,ROC_AUC,AP,Brier,calibration_slope,calibration_intercept,permutation_p,status
+raw,04_ML/Final_Model/GSE5281_external_predictions.csv,0.661538,0.603000,0.247655,0.521022,0.196228,0.206279,CANONICAL
+harmonized,04_ML/Final_Characterization/GSE5281_3gene_predictions_final.csv,0.684615,0.635252,,,,0.144686,SENSITIVITY
+fixed_metrics_recompute,04_ML/Reviewer_Robustness_V3/GSE5281_external_fixed_metrics.csv,0.661538,0.649287,0.265597,0.344136,0.087491,,SUPERSEDED - matches neither prediction file

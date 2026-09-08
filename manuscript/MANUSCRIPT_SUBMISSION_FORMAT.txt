@@ -1,0 +1,956 @@
+﻿Diagnosis is confounded with submission cohort throughout GSE5281:
+non-identifiability, measurement-target mismatch and calibration failure
+in Alzheimer's disease transcriptomic signature transfer
+
+
+AUTHORS
+[Author list required]
+
+AFFILIATIONS
+[Affiliations required]
+
+CORRESPONDING AUTHOR
+[Details required]
+
+ABSTRACT
+
+Cross-dataset performance is routinely reported as evidence that a
+transcriptomic disease signature generalises. We show that such evidence can
+be uninterpretable in principle, using a worked example built on two heavily
+reused public Alzheimer's disease expression resources.
+
+We developed a three-gene logistic signature (ABCA6, CRLF1, TNFRSF11B) in
+bulk hippocampal tissue from GSE48350 (n = 62; 49 training, 13 held out) and
+applied the locked model, without refitting, to the hippocampal subset of
+GSE5281 (n = 23; 10 cases, 13 controls). Apparent training ROC-AUC was 0.855,
+held-out ROC-AUC 0.694, and repeated nested cross-validation yielded 0.757
+(SD 0.165; 95% range 0.398-1.000). Transfer ROC-AUC was 0.662 before and
+0.685 after harmonisation to the training reference, with a bootstrap
+interval of 0.442-0.886 and permutation p = 0.206 and 0.145 respectively.
+
+Audit of the deposited metadata showed that this transfer performance cannot
+be read as evidence of transportable disease-associated signal. In the
+hippocampal subset, all thirteen controls belong to one Gene Expression
+Omnibus submission cohort and all ten cases to another; a design containing
+intercept, diagnosis and submission cohort is rank deficient (23 x 3, rank 2);
+and a transcriptome-wide classifier separated the two submission cohorts with
+leave-one-out ROC-AUC and accuracy of 1.000. The same nesting holds across
+the entire series: all 74 samples in the July 2006 submission are controls
+and all 87 in the October 2007 submission are cases, in all six profiled
+brain regions. GSE5281 additionally profiles laser-capture microdissected
+neurons with two-round amplification, whereas GSE48350 profiles bulk tissue,
+so transfer crosses a measurement boundary as well as a cohort boundary.
+Consistent with this, discrimination transported while calibration did not:
+mean predicted case probability in the transfer cohort was 0.003 against an
+observed prevalence of 0.435, and every sample was classified as control at
+the locked threshold.
+
+Apparent external discrimination, a non-identifiable design and a collapsed
+probability scale can therefore co-occur. Studies using GSE5281 as a
+case-control or validation resource should state that diagnosis and
+submission cohort are not separately identifiable within it, and should note
+that batch-correction procedures cannot recover identifiability from a fully
+collinear design.
+
+
+KEYWORDS
+
+Alzheimer's disease; transcriptomics; batch effects; identifiability; model
+calibration; external validation; machine learning; reproducibility
+
+
+1. INTRODUCTION
+
+
+Transcriptomic classification of Alzheimer's disease from public expression
+data follows a widely repeated template. Investigators combine one or more
+Gene Expression Omnibus (GEO) series, filter genes by differential expression
+or network membership, select a compact feature set using regularised
+regression or ensemble importance measures, fit a classifier, and report a
+receiver operating characteristic area under the curve, commonly between 0.85
+and 0.95. Where a second dataset is available, performance in that dataset is
+described as external or independent validation.
+
+Two bodies of evidence indicate that this template yields less than its
+outputs suggest. First, performance estimates in omics-based machine learning
+are systematically optimistic whenever analytical choices are made with any
+visibility of the evaluation data. Feature selection performed outside
+cross-validation folds, normalisation applied across a train-test boundary,
+and repeated-subject leakage have each been shown to inflate reported
+accuracy substantially [1]. Second, Alzheimer's disease biomarker claims
+replicate poorly. A prominent ten-analyte plasma lipid panel reported to
+predict phenoconversion with high accuracy [2] subsequently failed
+independent replication, and a recent reprofiling of the AddNeuroMed/ANMerge
+blood resource found that a classifier built from randomly selected genes
+achieved ROC-AUC 0.732 on the legacy data but only 0.567 once technical and
+cell-count artefacts were addressed, concluding that previously reported
+mitochondrial expression signals in blood did not hold [3].
+
+A third problem has received considerably less attention, and it is the
+subject of this report. Optimism and non-replication are properties of
+estimates. Identifiability is a property of designs. Where the disease
+variable within a dataset is collinear with a technical or administrative
+variable, no analysis of that dataset, however carefully cross-validated, can
+separate their effects. Performance can be measured, but it cannot be
+attributed.
+
+This distinction matters because it is not repaired by the procedures the
+field customarily applies. Batch-correction methods such as ComBat and
+surrogate variable analysis estimate batch effects conditional on the
+biological variable of interest. When batch and biology are perfectly
+collinear, the conditional model is not identified, and adjustment removes
+the disease contrast together with the technical one. The standard remedy is
+therefore inapplicable in precisely the situation where it appears most
+necessary.
+
+Two datasets illustrate the problem with unusual clarity, because both are
+heavily reused and are frequently combined with one another. GSE48350
+provides bulk brain tissue from several regions including hippocampus.
+GSE5281 provides laser-capture microdissected, non-tangle-bearing neurons
+from six brain regions in cases and cognitively normal controls [4].
+Published studies merge these two series using surrogate variable analysis
+and treat the merged data as a single expression resource [5], and other
+studies use GSE5281 alone as a validation cohort for signatures developed
+elsewhere.
+
+What is known, then, is that batch effects in public expression data are
+common and that correction is routine; that analytic leakage inflates
+performance estimates; and that discrimination and calibration are distinct
+model properties. What is not known is whether the specific public datasets
+on which a substantial fraction of Alzheimer's disease transcriptomic machine
+learning rests actually admit identification of diagnosis effects at all, and
+what a cross-dataset performance estimate means when they do not.
+
+We addressed this by developing a compact three-gene signature in GSE48350,
+locking the model, and transferring it to the GSE5281 hippocampal subset,
+treating the transfer as an object of study rather than as a validation step.
+We then audited the transfer cohort for design identifiability, cohort
+separability, workflow provenance and measurement-target comparability, and
+assessed discrimination and calibration separately.
+
+We emphasise at the outset that the three-gene signature is not offered as a
+biomarker. It serves as a vehicle. Its properties, which include modest
+internal performance, unstable feature selection and no demonstrated
+advantage over a two-gene reduction, are typical rather than exceptional, and
+that typicality is what makes it a useful worked example.
+
+
+
+2. METHODS
+
+
+2.1 Study design
+
+This study was designed as a methodological audit using an Alzheimer's
+disease transcriptomic signature as a worked example. GSE48350 served as the
+discovery dataset and the hippocampal subset of GSE5281 as the cross-dataset
+transfer-test cohort. We use the term cross-dataset transfer test throughout
+and deliberately avoid the term independent external validation, for reasons
+established in the Results.
+
+2.2 Datasets
+
+The discovery dataset was GSE48350, comprising bulk hippocampal tissue
+profiled on the Affymetrix Human Genome U133 Plus 2.0 array (GPL570).
+Sixty-two samples were used, partitioned into a training set of 49 samples
+(15 cases, 34 controls) and a held-out internal test set of 13 samples
+(4 cases, 9 controls) [6].
+
+The transfer-test cohort was the hippocampal subset of GSE5281, comprising 23
+samples (10 cases, 13 controls) on the same array platform [4]. The complete
+GSE5281 series contains 161 samples across six brain regions.
+
+Two additional datasets were used for cross-modality assessment: GSE63060,
+peripheral blood [7], and GSE138852, single-nucleus RNA sequencing of
+entorhinal cortex comprising three case and three control libraries [8].
+
+2.3 Preprocessing and age adjustment
+
+Both microarray datasets were processed from CEL files using robust multi-array
+average normalisation and summarised to gene level. The discovery data yielded
+21,367 genes from 54,675 probes. A variance filter computed on training
+samples only retained the top 25% of genes by variance, giving 5,342
+candidate genes.
+
+Age was then adjusted for, prior to feature selection, using training samples
+only. For each gene g, an ordinary least-squares model of expression on age
+was fitted across the 49 training samples. Adjusted values were obtained by
+subtracting the fitted age effect, with age centred on the training mean in
+both the training and held-out sets, so that no held-out information entered
+either the estimated slope or the centring constant. Per-gene coefficients,
+p-values and coefficients of determination were retained.
+
+Two properties of this adjustment merit explicit statement. Diagnosis was not
+included in the age model. Because age and diagnosis are strongly correlated
+in the training set (Section 3.1), the fitted age coefficient absorbs part of
+the diagnosis effect, and subtracting it removes some disease-associated
+variation alongside the age trend. The adjustment is therefore conservative,
+biasing against the detection of signal rather than towards it. The
+adjustment is also linear, so any non-linear age dependence is retained.
+
+An earlier implementation fitted the age effect across all 62 samples,
+including held-out samples. This was identified during the study as a leak
+and corrected; the leaked implementation and all matrices derived from it are
+superseded and are not used here.
+
+2.4 Data partitioning
+
+The training and held-out sets were formed by stratified random partition on
+diagnosis, with a test fraction of 0.20 and a fixed random seed, yielding 49
+training and 13 held-out samples.
+
+2.5 Model development and selection history
+
+The final model was an L1-penalised logistic regression (liblinear solver,
+inverse regularisation strength C = 0.3, maximum 10,000 iterations, fixed
+random seed) over ABCA6, CRLF1 and TNFRSF11B, with feature standardisation
+fitted on training data only and applied to external data using
+training-derived parameters. Fitted coefficients were 0.475 for ABCA6, 0.439
+for TNFRSF11B and 0.380 for CRLF1. Model coefficients, scaler parameters and
+the decision threshold were locked prior to transfer testing, and the
+transfer cohort was scored without refitting.
+
+This subsection is required for correct interpretation of every transfer-test
+value reported below.
+
+At least three model generations preceded the final specification: a
+fifteen-gene signature, a seven-gene model comprising the final three genes
+plus PLA2G7, SORBS1, PMS2P2 and TAB2 (internal ROC-AUC approximately 0.833,
+transfer ROC-AUC approximately 0.269), and the final three-gene model.
+Analysis-script modification times place the first extraction of GSE5281 and
+the first transfer evaluation on the evening of one day, followed the next
+morning by an uninterrupted rebuild of the discovery pipeline in strict
+sequence: raw CEL preprocessing, quality control, annotation, the
+training-test partition, the variance filter, the age adjustment, the LASSO
+feature selection that produced the three genes, and the regularisation
+tuning that fixed C = 0.3. The partition, feature set and regularisation
+parameter were therefore all fixed after the transfer cohort had been
+examined.
+
+Accordingly, the transfer ROC-AUC reported in this study is not an unbiased
+out-of-sample estimate. We report it as a selection-conditioned transfer
+estimate and draw no inference about generalisation from it. We regard this
+disclosure as material rather than incidental: it is a contemporaneously
+documented instance of validation optimism arising in an analysis explicitly
+attempting to avoid it, and it is the reason the present study treats the
+transfer test as an object of investigation rather than as evidence for the
+signature.
+
+Separate audit analyses used default L2-penalised logistic regression and are
+not the canonical performance model. The difference between the L2
+out-of-fold estimate of 0.835 and the apparent L1 training value of 0.855
+reflects regularisation, not data. Analyses using a superseded age-adjusted
+matrix and an earlier data partition are excluded from this report.
+
+2.6 Internal evaluation
+
+Discrimination was summarised by ROC-AUC and average precision. Internal
+performance was assessed on the training data, on the held-out test set, and
+by repeated nested cross-validation using five outer folds and fifty repeats,
+giving 250 iterations, with feature selection performed inside outer training
+folds.
+
+Feature-selection stability was assessed by three procedures: LASSO stability
+selection over repeated folds, LASSO bootstrap positive-coefficient
+frequency, and nested cross-validation selection frequency. Only the last is
+free of selection leakage, and it is treated as the primary estimate.
+
+2.7 Transfer test, calibration and uncertainty
+
+The locked model was applied to the GSE5281 hippocampal expression matrix.
+Raw predictions were evaluated first, and harmonisation to the training
+reference, in which each gene's external values were rescaled to the training
+mean and standard deviation, was assessed as a sensitivity analysis.
+
+Discrimination and calibration were assessed separately. Calibration was
+summarised by Brier score and by calibration intercept and slope, the latter
+obtained by clipping predicted probabilities at 1 x 10^-6, taking the logit,
+and fitting a binomial generalised linear model of outcome on logit predicted
+probability. Because external predicted probabilities fall near 0.003, the
+logit lies near -5.8 and the fitted intercept is sensitive to the clipping
+constant, which is therefore reported explicitly. Threshold-based
+classification used the locked decision threshold.
+
+Uncertainty was estimated by bootstrap resampling and by permutation of
+diagnosis labels using 10,000 permutations, performed separately for the raw
+and harmonised analyses.
+
+2.8 Identifiability and cohort-structure audit
+
+Sample-level metadata were reconstructed from the GEO SOFT record for all 161
+GSE5281 samples, using submission date as the cohort indicator. A design
+matrix containing an intercept, diagnosis and submission cohort was
+constructed and its rank computed.
+
+Transcriptome-wide structure was examined by principal component analysis of
+standardised expression, with component-diagnosis association assessed by
+Mann-Whitney U test, Spearman correlation and ROC-AUC. Genes with missing
+values or zero variance were removed before scaling. A separate
+transcriptome-wide logistic classifier was trained to distinguish submission
+cohorts and evaluated by leave-one-out cross-validation.
+
+Six workflow-related metadata fields, covering extraction, labelling,
+labelling protocol, hybridisation, scanning and data processing, were
+compared between cohorts. Because absent metadata cannot establish that
+workflows differed, differential availability was interpreted as a failure to
+confirm equivalence rather than as proof of a technical artefact.
+
+2.9 Ablation and confounder analyses
+
+All seven one-, two- and three-gene combinations were evaluated under the
+locked specification, with paired bootstrap comparison of transfer ROC-AUC.
+Age and sex were evaluated as standalone predictors and in joint models with
+the signature, assessed by likelihood-ratio tests.
+
+2.10 Cell-type composition
+
+Cell-type composition was estimated using marker-score proxies rather than
+deconvolution. Each marker gene was standardised across samples and the
+per-cell-type score taken as the mean standardised value across markers
+present in the matrix. Marker sets were defined for oligodendrocytes
+(MBP, MOG, MOBP, PLP1, OLIG1, OLIG2, MAG, CLDN11, CNP, ERMN), astrocytes
+(GFAP, AQP4, ALDH1L1, SLC1A3, GJA1, SOX9), microglia (AIF1, CX3CR1, CSF1R,
+C1QA, C1QB, C1QC, P2RY12), neurons (RBFOX3, SNAP25, SYT1, MAP2, NEFL, ENO2),
+endothelial cells (CLDN5, PECAM1, VWF, KDR, EMCN, ESAM) and oligodendrocyte
+precursor cells (PDGFRA, CSPG4, SOX10, OLIG1, OLIG2).
+
+OLIG1 and OLIG2 appear in both the oligodendrocyte and precursor marker sets,
+so these two scores share two markers and are not independent. This is
+disclosed as a limitation of the comparator set.
+
+2.11 Annotation and network analysis
+
+The three genes were submitted to STRING for interaction and functional
+enrichment analysis, and to Gene Ontology, KEGG and Reactome. Because the
+query set contains three genes, enrichment statistics computed on it are
+dominated by single-gene overlaps. These results are therefore reported as
+gene-level annotation rather than pathway enrichment, and odds ratios and
+combined scores derived from single-gene overlaps are not reported.
+
+2.12 Software
+
+Analyses were performed in Python using scikit-learn 1.9.0, numpy 2.5.2,
+pandas 2.3.3, scipy 1.17.1, statsmodels 0.14.6, xgboost 3.4.1, shap 0.52.0
+and gseapy 1.3.1, with figures produced using matplotlib 3.11.1 and seaborn
+0.13.2. Preprocessing, variance filtering and age adjustment were performed
+in R. A fixed random seed was used throughout.
+
+
+
+3. RESULTS
+
+
+3.1 The discovery cohort is confounded by age
+
+The discovery cohort is age-imbalanced to a degree that limits
+interpretation independently of anything observed in the transfer cohort
+(Table 1). In the training set, cases had a mean age of 82.5 years (SD 9.0,
+range 60-94) and controls a mean age of 62.5 years (SD 24.2, range 20-96);
+the control group includes individuals as young as 20 years. Age alone
+achieved a training ROC-AUC of 0.741 and a held-out ROC-AUC of 0.708.
+
+In the transfer cohort, by contrast, ages are approximately balanced (cases
+77.8, SD 5.7; controls 79.6, SD 9.4), and age alone achieved a ROC-AUC of
+0.423.
+
+The signature carried information beyond age within the discovery data
+(likelihood-ratio chi-square 25.53, 1 degree of freedom, p = 4.36 x 10^-7),
+and age likewise added information to the signature (chi-square 13.86,
+p = 1.97 x 10^-4). These tests establish non-redundancy; they do not
+establish that the discovery signal is free of age-related structure. The
+model was developed in a setting where age tracks diagnosis and applied in a
+setting where it does not.
+
+3.2 Internal performance and selection stability
+
+The final signature comprised ABCA6, TNFRSF11B and CRLF1. Apparent training
+ROC-AUC was 0.855, with an average precision of 0.828. Held-out ROC-AUC was
+0.694, with an average precision of 0.694, computed on four cases and nine
+controls and therefore on 36 discordant pairs.
+
+Repeated nested cross-validation gave a mean ROC-AUC of 0.757 (median 0.762,
+SD 0.165), with a 2.5th to 97.5th percentile range of 0.398 to 1.000
+(Figure 4). A substantial fraction of outer folds fell below 0.5.
+
+Feature-selection stability was strongly procedure-dependent (Table 2).
+Nested cross-validation selection frequencies, the only estimates free of
+selection leakage, were 0.628 for TNFRSF11B, 0.504 for CRLF1 and 0.440 for
+ABCA6, with ABCA6 ranking sixth among candidate genes. LASSO stability
+selection over repeated folds gave 0.52, 0.52 and 0.50 respectively, and
+bootstrap positive-coefficient frequencies gave 0.152, 0.057 and 0.092. Only
+TNFRSF11B stands out under any procedure, and none of the three genes is
+stably selected.
+
+3.3 Transfer-test discrimination
+
+Applied to the 23 GSE5281 hippocampal samples, the locked model achieved a
+raw transfer ROC-AUC of 0.662 with an average precision of 0.603.
+Harmonisation to the training reference gave 0.685 and 0.635 respectively.
+The difference of 0.023 corresponds, at this sample size, to three of 130
+discordant pairs.
+
+Bootstrap resampling of the harmonised analysis gave a 95% interval of 0.442
+to 0.886. Permutation testing against 10,000 label permutations gave p =
+0.206 for the raw analysis and p = 0.145 for the harmonised analysis. The
+permutation null had a mean of 0.498 and a 2.5th to 97.5th percentile range
+of 0.254 to 0.746, so both observed values fall inside the null range.
+
+Under the same locked specification, ablation showed that the combination of
+ABCA6 and TNFRSF11B achieved a higher transfer ROC-AUC (0.731) than the full
+three-gene model (0.662) (Table 3). Paired bootstrap comparison gave an
+observed difference of 0.069 in favour of the reduced model, with a 95%
+interval of -0.159 to 0.278 and a posterior probability of 0.736 that the
+difference is positive. Superiority of the three-gene model is therefore not
+supported, and neither is superiority of the reduced model. We note that the
+reduced model's higher transfer value must not be used to justify post-hoc
+panel reduction, as doing so would compound the selection dependency
+described in Section 2.5.
+
+3.4 Diagnosis is perfectly confounded with submission cohort
+
+All thirteen hippocampal control samples belong to the July 2006 submission
+cohort, and all ten hippocampal case samples belong to the October 2007
+cohort (Figure 1a). Diagnosis is perfectly nested within submission cohort.
+
+A design matrix containing an intercept, diagnosis and submission cohort has
+dimensions 23 by 3 and rank 2 (Figure 1b). The design is rank deficient and
+the diagnosis vector equals the submission indicator. Diagnosis and cohort
+effects cannot be separately estimated.
+
+This structure is not confined to the hippocampal subset. Across the full
+161-sample series, the July 2006 submission comprises 74 samples, every one
+of which is titled as a control, spanning entorhinal cortex, hippocampus,
+middle temporal gyrus, posterior cingulate, superior frontal gyrus and
+primary visual cortex. The October 2007 submission comprises 87 samples,
+every one of which is titled as affected, spanning the same six regions.
+Every case-control contrast available in GSE5281, in any brain region, is
+confounded with submission cohort in the same manner.
+
+The two submissions also employ different tissue vocabularies, with controls
+annotated as "Medial Temporal Gyrus" and "Posterior Cingulate" and cases as
+"Middle temporal gyrus" and "Posterior cingulate cortex", consistent with
+separate submission and annotation events.
+
+3.5 Transcriptome-wide cohort separation
+
+Principal component analysis of the hippocampal subset showed the first
+component explaining 26.97% of variance and the second 9.40%. The first
+component was strongly associated with diagnosis (ROC-AUC 0.115, equivalent
+to 0.885 with the sign reversed; Mann-Whitney p = 0.0021; Spearman rho
+-0.661, p = 5.9 x 10^-4), as was the second (ROC-AUC 0.908; Mann-Whitney
+p = 0.0011; rho 0.701, p = 2.0 x 10^-4). No later component showed
+association, the third giving a ROC-AUC of 0.415.
+
+More directly, a transcriptome-wide logistic classifier assigned all 23
+samples to their correct submission cohort under leave-one-out
+cross-validation, with a ROC-AUC and accuracy of 1.000 (Figure 1c). The two
+submission cohorts are perfectly separable from expression data alone.
+
+Six workflow-related metadata fields were documented for the case submission
+and absent for the control submission. The case submission records data
+processing as MAS5.0 with target scaling to 150, extraction using the
+Arcturus PicoPure system, and labelling by double-round expression
+profiling. Equivalence of experimental workflow between the two cohorts
+therefore cannot be confirmed from the deposited record.
+
+3.6 The two datasets do not profile the same measurement target
+
+GSE5281 profiles laser-capture microdissected, non-tangle-bearing neurons
+with two-round linear amplification, consistent with the deposited extraction
+and labelling protocols described above. GSE48350 profiles bulk hippocampal
+tissue.
+
+The consequences are visible in the expression distributions (Figure 2). The
+GSE48350 densities are broad and approximately symmetric with a mode near 6.5
+log2 units, whereas the GSE5281 densities are sharply unimodal near 2.7 with
+a long right tail. The difference is one of distributional shape rather than
+location, which a difference in scanning batch or scaling factor would not
+produce.
+
+Variance compression is also severe and gene-specific (Table 4). Training
+standard deviations were 0.94 for ABCA6, 0.84 for CRLF1 and 0.80 for
+TNFRSF11B, whereas the corresponding raw transfer standard deviations were
+0.15, 0.56 and 0.16. Harmonisation to the training reference restores the
+marginal moments by construction but does not render the underlying
+measurements comparable.
+
+3.7 Discrimination transported; calibration did not
+
+In the discovery data the model was reasonably calibrated. Training mean
+predicted probability was 0.374 against an observed prevalence of 0.306, with
+a Brier score of 0.137 and a calibration intercept of -0.009. In the held-out
+set, mean predicted probability was 0.461 against an observed prevalence of
+0.308, with a Brier score of 0.218; the calibration intercept of -0.715 and
+slope of 1.089 are unstable at n = 13.
+
+In the transfer cohort, calibration failed completely (Figure 3). Predicted
+case probabilities ranged from 0.0019 to 0.0068, with a mean of 0.0029 and a
+median of 0.0026, against an observed prevalence of 0.435. The Brier score
+was 0.432. The locked threshold of 0.330 was unreachable by two orders of
+magnitude, and all 23 samples were classified as control, giving a
+sensitivity of 0.000, a specificity of 1.000, a negative predictive value of
+0.565 and an undefined positive predictive value. Rank discrimination was
+nevertheless preserved at a ROC-AUC of 0.662.
+
+Harmonisation acted principally as a calibration correction rather than a
+discrimination gain, reducing the Brier score from 0.432 to 0.229 while
+changing ROC-AUC by 0.023. The threshold-based metrics for the raw transfer
+model describe a degenerate all-negative classifier and should not be
+interpreted as performance.
+
+3.8 Cell-type composition
+
+Within the discovery cohort, the signature was not reducible to the evaluated
+composition scores. The three-gene score achieved a ROC-AUC of 0.855 and
+remained at 0.861 after residualisation for oligodendrocyte score.
+Oligodendrocyte score alone achieved 0.549, and adding it to the signature
+changed ROC-AUC by approximately zero. The signature added information over
+the first two composition principal components (chi-square 10.94,
+p = 9.4 x 10^-4), and no individual cell-type score added information over
+the signature, all p exceeding 0.22.
+
+The signature was not, however, shown to improve discrimination over
+composition. The observed difference was 0.037 with a 95% interval of -0.19
+to 0.24. In a separate cross-validated analysis using default L2
+regularisation, astrocyte score alone achieved discrimination comparable to
+the signature. A joint model containing all six composition scores was not
+estimable owing to a singular Hessian, with approximately 2.5 events per
+variable.
+
+ABCA6 correlated positively with oligodendrocyte score (Spearman rho 0.372,
+p = 0.0085), whereas CRLF1 and TNFRSF11B did not (rho -0.106, p = 0.467 and
+rho -0.065, p = 0.658 respectively).
+
+This creates a coherence problem, which we state rather than resolve. The
+composition association observed for ABCA6 is an oligodendrocyte association
+measured in bulk tissue. The transfer cohort consists of laser-captured
+neurons from which glia have been deliberately excluded. Whatever produced
+transfer discrimination in GSE5281, it cannot be the oligodendrocyte-
+associated biology observed in the discovery cohort.
+
+3.9 Single-cell and cross-tissue behaviour
+
+In GSE138852, TNFRSF11B was absent from the expression matrix entirely, so
+only two of the three genes could be assessed. ABCA6 and CRLF1 were detected
+in 4.0% and 4.1% of cells respectively, at the limit of detection.
+
+Pseudobulk comparison across three case and three control libraries found
+ABCA6 higher in case oligodendrocytes (0.128 against 0.021, a 6.06-fold
+difference, Cohen's d 1.59), but with an exact permutation p of 0.2 and a
+false discovery rate of 0.80. No comparison in this analysis survived
+multiple-testing correction; the smallest false discovery rate across all
+tested gene and cell-type combinations was 0.80.
+
+Oligodendrocyte proportion differed markedly between conditions in the same
+libraries, at 60.0%, 64.6% and 79.7% in cases against 36.5%, 39.4% and 47.0%
+in controls, so composition and the ABCA6 signal vary in the same direction.
+The library-level correlation between oligodendrocyte percentage and ABCA6
+expression was rho 0.43 (p = 0.40, n = 6). The single-cell data are therefore
+not inconsistent with the discovery observation, but they are underpowered
+and confounded with composition, and cannot be described as independent
+validation.
+
+In blood, ABCA6 added modestly to a model containing age and sex, raising
+ROC-AUC from 0.631 to 0.682, a difference of 0.051, with a likelihood-ratio
+p of approximately 4.2 x 10^-4 and Akaike information criterion falling from
+289.2 to 278.8. Effect directions across tissues diverged. ABCA6 and CRLF1
+retained sign, with Cohen's d of 1.089, 0.551 and 0.137 and of 1.055, 0.059
+and 0.098 across discovery, transfer and blood respectively, whereas
+TNFRSF11B reversed direction in blood, with values of 1.221, 0.345 and -0.372
+(Figure 5).
+
+3.10 Annotation and network analysis
+
+STRING returned no interactions among ABCA6, CRLF1 and TNFRSF11B and no
+functional enrichment for the three-gene set. The genes do not constitute a
+connected module.
+
+First-shell neighbours were gene-specific. CRLF1 associated with CLCF1
+(confidence 0.999), IL27 (0.982), CNTFR (0.870) and CNTF (0.856); ABCA6 with
+ABCA9 (0.790) and ABCA8 (0.683); and TNFRSF11B with TNFRSF11A (0.762) and
+IL17RC (0.623).
+
+Gene Ontology, KEGG and Reactome results reflect single-gene annotations: ABC
+transporters (one of 45 genes, adjusted p = 0.020, ABCA6), osteoclast
+differentiation (one of 127, adjusted p = 0.028, TNFRSF11B),
+cytokine-cytokine receptor interaction (one of 295, adjusted p = 0.044,
+TNFRSF11B) and ciliary neurotrophic factor receptor binding (one of five,
+adjusted p = 0.0037, CRLF1). These are annotations rather than enrichment and
+provide no evidence that the three genes act in a shared pathway.
+
+
+
+
+4. DISCUSSION
+
+
+
+4.1 The confounding structure and its relation to previous work
+
+We found that in GSE5281 diagnosis is perfectly nested within submission
+cohort, across the whole series and in every profiled region; that the
+resulting design is rank deficient; and that transcriptome-wide expression
+separates the two submission cohorts without error.
+
+Batch effects in public expression data are thoroughly documented and their
+correction is standard practice. Several published studies merge GSE5281 with
+GSE48350 and other series using surrogate variable analysis or ComBat before
+analysis [5], and others use GSE5281 as a validation cohort. We were unable to
+locate a published report of the submission-cohort nesting itself.
+
+Our finding does not contradict the batch-effect literature. It identifies a
+case in which the standard remedy is inapplicable. ComBat and surrogate
+variable analysis estimate batch effects conditional on the biological
+variable of interest; when batch and biology are collinear, the conditional
+model is not identified, and adjustment removes the disease contrast together
+with the technical one. This is a limitation of the design rather than of the
+software.
+
+The most likely explanation is straightforward study logistics: controls were
+profiled and deposited in 2006 and cases in 2007. The two submissions carry
+different tissue vocabularies and, for the case submission, explicitly
+documented MAS5 processing. Sequential collection of cases and controls was
+unremarkable in that period. The problem lies in downstream reuse that treats
+the resulting series as a single balanced cohort.
+
+What our study adds is a specific and checkable statement about a heavily
+reused resource, supported by a formal identifiability argument and a
+transcriptome-wide demonstration rather than a diagnostic plot. Any reader
+can verify the claim directly from the deposited SOFT record.
+
+What remains uncertain is how much of any observed case-control difference in
+GSE5281 is biological. That is precisely the point: within this design, the
+quantity is not estimable. We do not claim that differential expression
+reported from GSE5281 is artefactual. We claim that it is not separable from
+cohort.
+
+4.2 What transfer performance does and does not indicate
+
+The locked model achieved a transfer ROC-AUC of 0.662, or 0.685 after
+harmonisation, with a bootstrap interval spanning 0.442 to 0.886 and
+permutation p values of 0.206 and 0.145.
+
+Performance attenuation on genuinely external data is the norm in this
+literature. Lee and Lee reported internal five-fold ROC-AUC values of 0.657
+to 0.874 across ADNI and AddNeuroMed blood cohorts, falling to 0.619 to 0.859
+on cross-dataset evaluation [9]. Lunnon and colleagues reported a 48-gene
+blood classifier achieving 75% accuracy, outperformed by magnetic resonance
+imaging at 85% in the same subjects [10]. Blood classifiers reaching ROC-AUC
+0.886 have been reported in independent train-test designs [11].
+
+Our transfer value sits at the low end of this range, which is unsurprising
+given a training set of 49 samples with 15 events and three predictors,
+approximately five events per variable and below conventional guidance. We
+make no claim of comparative performance. The transfer estimate is
+selection-conditioned, the two cohorts differ in measurement target, and the
+sample sizes are too small for the comparison to be informative. Reporting
+the number alongside published values without these qualifications would be
+precisely the practice this study argues against.
+
+What our study adds is a demonstration that a transfer ROC-AUC in the range
+routinely described as acceptable can arise in a cohort where the disease
+effect is not identifiable, where the measurement target differs, and where
+the probability scale has collapsed.
+
+4.3 Measurement-target mismatch
+
+GSE5281 profiles laser-captured neurons with two-round amplification and
+GSE48350 profiles bulk tissue. Expression distributions differ in shape, and
+per-gene variance in the transfer cohort is compressed by up to sixfold.
+
+That laser capture and bulk profiling measure different quantities is not in
+dispute; it is the stated rationale for the GSE5281 design, which was
+intended to isolate neuronal signal from surrounding tissue. The importance
+of cellular heterogeneity in bulk brain expression is likewise well
+established, and single-nucleus atlases have been developed in part to
+address it [12].
+
+We agree with this literature and extend it to validation practice. A study
+that treats GSE5281 as an external validation cohort for a bulk-derived
+signature is not testing generalisation across cohorts; it is testing
+transfer across measurement modalities, without stating that this is what it
+is doing.
+
+Amplification and cell-type purification both alter the marginal distribution
+and compress between-sample variance. Mean-variance harmonisation to a
+training reference restores marginal moments arithmetically but does not
+restore comparability. What our study adds is a concrete mechanism for the
+calibration failure and a specific caution about a common dataset pairing.
+
+4.4 Discrimination and calibration are separate properties
+
+We observed a mean predicted case probability of 0.003 against an observed
+prevalence of 0.435, with all samples classified as control, while ROC-AUC
+remained at 0.662.
+
+The distinction between discrimination and calibration is standard in
+clinical prediction modelling, and systematic appraisals of Alzheimer's
+disease risk models have found that most published studies are
+methodologically deficient with a high risk of bias, and that external
+validation is uncommon [13]. Our result agrees with and illustrates that
+literature. Its particular value lies in the magnitude: a discrepancy of two
+orders of magnitude is not a subtle miscalibration but a clear signal that
+the model is being applied to data unlike anything it was fitted on.
+
+What our study adds is an argument for reporting calibration as a diagnostic
+for distributional mismatch rather than as a secondary performance property.
+The collapsed probability scale would have flagged the measurement-target
+problem before any metadata audit was undertaken.
+
+4.5 The signature genes
+
+We do not present ABCA6, CRLF1 or TNFRSF11B as Alzheimer's disease
+biomarkers, and our evidence does not support doing so.
+
+We found no established association between ABCA6 and Alzheimer's disease. We
+note explicitly that ABCA6 is not ABCA7. ABCA7 is among the best-supported
+Alzheimer's disease risk genes across genomics, transcriptomics and
+methylomics [14], and framing ABCA6 within a general ABC transporter
+narrative risks borrowing that support illegitimately. Our evidence for
+ABCA6 comprises a discovery-cohort effect size of 1.09, a correlation with
+oligodendrocyte score of 0.372, a single-cell oligodendrocyte difference at a
+false discovery rate of 0.80 confounded with composition, and a nested
+selection frequency of 0.440 with a rank of sixth. This is weak.
+
+We found no Alzheimer's disease literature for CRLF1. Its annotation places
+it in interleukin-6 family and ciliary neurotrophic factor receptor
+signalling. Its discovery effect size of 1.06 did not transport, falling to
+0.06, and it contributed nothing to transfer discrimination: adding CRLF1 to
+ABCA6 and TNFRSF11B reduced transfer ROC-AUC from 0.731 to 0.662.
+
+TNFRSF11B is the one gene with independent literature of relevance.
+Osteoprotegerin has been reported in cerebrospinal fluid as correlating with
+translocator protein positron emission tomography signal in Alzheimer's
+disease, in an explicitly exploratory analysis [15]. This is a different
+analyte class in a different compartment, and so constitutes biological
+plausibility rather than replication. TNFRSF11B was the most consistently
+selected of our three genes, with a nested frequency of 0.628, but reversed
+direction in blood.
+
+None of these genes constitutes a defensible novel Alzheimer's disease
+biomarker on our evidence. They are reported because the signature is the
+vehicle for the methodological argument, not because we consider them
+promising.
+
+4.6 Claims not made
+
+We do not claim that the observed transfer discrimination is entirely
+technical in origin. We do not claim that the three genes lack biological
+relevance. We do not claim that differential expression published from
+GSE5281 is wrong. We do not claim clinical validity, mechanistic insight, or
+superiority over any published model.
+
+We claim that within GSE5281 diagnosis and submission cohort are not
+separately identifiable; that the dataset profiles a different measurement
+target from the bulk-tissue datasets with which it is merged and against
+which signatures are validated; and that transfer performance measured under
+these conditions cannot be interpreted as evidence of transportable
+disease-associated signal.
+
+4.7 Recommendations
+
+Studies using GSE5281 as a case-control resource should state that diagnosis
+and submission cohort are collinear, and that batch adjustment cannot recover
+identifiability from a fully confounded design. Studies merging GSE5281 with
+bulk-tissue series should state that the series differ in measurement target
+and justify the merge. Cross-dataset evaluations should report calibration
+alongside discrimination, treating a collapsed probability scale as
+diagnostic information rather than a footnote. Model-selection history should
+be reported, and where an evaluation cohort has influenced any modelling
+decision, subsequent performance on that cohort should be described as
+selection-conditioned. Finally, before a dataset is adopted as a validation
+cohort, its design should be checked for collinearity between the outcome and
+any administrative or technical variable available in the metadata. This
+check takes minutes.
+
+
+
+
+5. LIMITATIONS
+
+The discovery cohort is small, comprising 49 training samples with 15 events,
+and is severely age-imbalanced, with controls spanning ages 20 to 96. The
+held-out test set contains 13 samples and therefore 36 discordant pairs, and
+the transfer cohort contains 23 samples and 130 discordant pairs. At these
+sample sizes the ROC-AUC statistic is coarse; the transfer AUC changes in
+increments of 1/130. Every performance difference reported here lies within
+sampling noise, and the nested cross-validation interval of 0.398 to 1.000 is
+essentially uninformative about the model's true discrimination.
+
+The transfer estimate is selection-conditioned, as described in Section 2.5.
+The age adjustment is linear and omits diagnosis from the covariate model, so
+it removes some disease-associated variation; this is conservative, but it
+means the reported discovery performance is a lower bound relative to an
+unadjusted model. The oligodendrocyte and precursor marker sets share two
+genes, so those comparators are not independent, and composition estimates
+are marker-score proxies rather than deconvolution.
+
+We have not audited GSE48350 for the same submission-cohort structure. Sample
+correlation structure in that dataset suggests grouping, and this analysis
+should be completed.
+
+Finally, this study examines a single dataset pair. We do not know how common
+perfect outcome-cohort collinearity is across public repositories, and we do
+not claim that it is typical.
+
+
+
+6. CONCLUSION
+
+
+
+We set out to test whether a compact transcriptomic signature developed in
+one Alzheimer's disease brain cohort would transfer to another, and found
+that the question could not be answered with the data available. In GSE5281,
+diagnosis is perfectly nested within submission cohort across the entire
+series; the corresponding design is rank deficient; and transcriptome-wide
+expression separates the submission cohorts without error. The dataset also
+profiles laser-captured neurons rather than bulk tissue, so transfer into it
+crosses a measurement boundary as well as a cohort boundary. Under these
+conditions our locked model produced a transfer ROC-AUC of 0.662, a value
+that would ordinarily be reported as modest external validation, while
+assigning a mean case probability of 0.003 to a cohort with 43.5%
+prevalence.
+
+The specific signature is unremarkable and we make no claim for it. The
+general point is that discrimination, identifiability and calibration are
+three separate properties, and that measuring the first says nothing about
+the other two. A transfer test performed without checking design
+identifiability and probability calibration is not validation, and reporting
+it as such is a substantive error rather than a matter of wording.
+
+
+DECLARATIONS
+
+
+
+Data availability
+All datasets analysed are publicly available from the Gene Expression Omnibus
+under accessions GSE48350, GSE5281, GSE63060 and GSE138852.
+
+Code availability
+[Repository URL required. A public repository containing all analysis
+scripts, the locked model specification and derived tables is required for
+this manuscript.]
+
+Competing interests
+[Statement required]
+
+Funding
+This work received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+Author contributions
+[Statement required]
+
+Ethics
+[Statement required]
+
+
+REFERENCES
+
+
+[1]  Rosenblatt, M., Tejavibulya, L., Jiang, R. et al. Data leakage inflates prediction performance in connectome-based machine learning models. Nat Commun 15, 1829 (2024). https://doi.org/10.1038/s41467-024-46150-w.
+
+
+[2]  Mapstone, M., Cheema, A., Fiandaca, M. et al. Plasma phospholipids identify antecedent memory impairment in older adults. Nat Med 20, 415–418 (2014). https://doi.org/10.1038/nm.3466.
+
+[3]  Mohamed Ismail, N., Miller, M., Crossland, H., Sharif, J. A., Chapple, J. P., Wahlestedt, C., Shkura, K., Volmar, C. H., Slabaugh, G., & Timmons, J. A. (2025). A new ANMerge-based blood transcriptomic resource to support Alzheimer's disease research. medRxiv : the preprint server for health sciences, 2025.10.02.25337067. https://doi.org/10.1101/2025.10.02.25337067.
+
+
+[4]  Liang, W. S., Dunckley, T., Beach, T. G., Grover, A., Mastroeni, D., Ramsey, K., Caselli, R. J., Kukull, W. A., McKeel, D., Morris, J. C., Hulette, C. M., Schmechel, D., Reiman, E. M., Rogers, J., & Stephan, D. A. (2008). Altered neuronal gene expression in brain regions differentially affected by Alzheimer's disease: A reference data set. Physiological Genomics. https://doi.org/PG-00242-2007.
+
+
+[5]  Li, J., Li, L., Cai, S., Song, K., & Hu, S. (2024). Identification of novel risk genes for Alzheimer’s disease by integrating genetics from hippocampus. Scientific Reports, 14(1), 27484. https://doi.org/10.1038/s41598-024-78181-0.
+
+    
+[6] Berchtold, N. C., Coleman, P. D., Cribbs, D. H., Rogers, J., Gillen, D. L., & Cotman, C. W. (2013). Synaptic genes are extensively downregulated across multiple brain regions in normal human aging and Alzheimer’s disease. Neurobiology of Aging, 34(6), 1653–1661. https://doi.org/10.1016/j.neurobiolaging.2012.11.024
+
+
+[7]  Sood, S., Gallagher, I. J., Lunnon, K., Rullman, E., Keohane, A., Crossland, H., Phillips, B. E., Cederholm, T., Jensen, T., van Loon, L. J. C., Lannfelt, L., Kraus, W. E., Atherton, P. J., Howard, R., Gustafsson, T., Hodges, A., & Timmons, J. A. (2015). A novel multi-tissue RNA diagnostic of healthy ageing relates to cognitive health status. Genome Biology, 16, 185. https://doi.org/10.1186/s13059-015-0750-x
+
+
+[8]  Grubman, A., Chew, G., Ouyang, J. F., Sun, G., Choo, X. Y., McLean, C., Simmons, R. K., Buckberry, S., Vargas-Landin, D. B., Poppe, D., Pflueger, J., Lister, R., Rackham, O. J. L., Petretto, E., & Polo, J. M. (2019). A single-cell atlas of entorhinal cortex from individuals with Alzheimer’s disease reveals cell-type-specific gene expression regulation. Nature Neuroscience, 22(12), 2087–2097. https://doi.org/10.1038/s41593-019-0539-4
+
+[9] Lee, T., & Lee, H. (2020). Prediction of Alzheimer’s disease using blood gene expression data. Scientific Reports, 10(1), 3485. https://doi.org/10.1038/s41598-020-60595-1.
+
+
+[10] Lunnon, K., Sattlecker, M., Furney, S. J., Coppola, G., Simmons, A., Proitsi, P., Lupton, M. K., Lourdusamy, A., Johnston, C., Soininen, H., Kłoszewska, I., Mecocci, P., Tsolaki, M., Vellas, B., Geschwind, D., Lovestone, S., Dobson, R., Hodges, A., & Consortium, A. (2013). A Blood Gene Expression Marker of Early Alzheimer's Disease. Journal of Alzheimer’s Disease. https://doi.org/10.3233_JAD-2012-121363.
+
+
+[11] Kelly, J., Moyeed, R., Carroll, C., Luo, S., & Li, X. (2023). Blood biomarker-based classification study for neurodegenerative diseases. Scientific Reports, 13(1), 17191. https://doi.org/10.1038/s41598-023-43956-4.
+
+
+[12] Mathys, H., Davila-Velderrain, J., Peng, Z., Gao, F., Mohammadi, S., Young, J. Z., Menon, M., He, L., Abdurrob, F., Jiang, X., Martorell, A. J., Ransohoff, R. M., Hafler, B. P., Bennett, D. A., Kellis, M., & Tsai, L. H. (2019). Single-cell transcriptomic analysis of Alzheimer’s disease. Nature, 570(7761), 332-337. https://doi.org/10.1038/s41586-019-1195-2.
+
+
+[13] Wang, X., Zhou, S., Ye, N. et al. Predictive models of Alzheimer’s disease dementia risk in older adults with mild cognitive impairment: a systematic review and critical appraisal. BMC Geriatr 24, 531 (2024). https://doi.org/10.1186/s12877-024-05044-8.
+
+
+[14] De Roeck, A., Van Broeckhoven, C. & Sleegers, K. The role of ABCA7 in Alzheimer’s disease: evidence from genomics, transcriptomics and methylomics. Acta Neuropathol 138, 201–220 (2019). https://doi.org/10.1007/s00401-019-01994-1.
+
+
+[15] Pola I, Ashton NJ, Antônio De Bastiani M, et al. Exploring inflammation-related protein expression and its relationship with TSPO PET in Alzheimer's disease. Alzheimer's Dement. 2025; 21:e70171. https://doi.org/10.1002/alz.70171.
+ 
+
+TABLES
+
+						
+Table 1. Characteristics of the discovery and transfer cohorts, by split and
+diagnosis, showing sample counts, age distribution and sex composition.
+
+Table 2. Feature-selection frequency for each signature gene under three
+selection procedures, with nested cross-validation identified as the primary
+leak-free estimate.
+
+Table 3. Discrimination for all seven gene combinations under the locked
+model specification, in the training set, the held-out set and the transfer
+cohort.
+
+Table 4. Per-gene expression moments in the training and transfer cohorts,
+before and after harmonisation, with the corresponding transfer
+discrimination.
+
+Table 5. Audit of every substantive claim in this study against its
+supporting evidence, with verdicts. (Supplementary)
+
+
+
+FIGURE LEGENDS
+
+
+
+Figure 1. Design identifiability in the GSE5281 hippocampal subset.
+(a) Contingency table of diagnosis against GEO submission cohort, showing
+perfect nesting. (b) Design matrix summary: dimensions 23 by 3, rank 2, rank
+deficient, indicating that diagnosis and cohort effects cannot be separately
+estimated. (c) Leave-one-out cross-validated performance of a
+transcriptome-wide classifier trained to distinguish submission cohorts,
+achieving a ROC-AUC and accuracy of 1.000.
+
+Figure 2. Measurement-target mismatch between the discovery and transfer
+datasets. Expression densities and per-sample distributions for GSE48350
+(bulk hippocampal tissue) and GSE5281 (laser-capture microdissected neurons),
+showing a difference in distributional shape rather than location.
+
+Figure 3. Mean predicted against observed case probability in the training
+set, the held-out set and the transfer cohort, showing preserved calibration
+internally and complete calibration failure on transfer.
+
+Figure 4. Distribution of outer-fold ROC-AUC across 250 nested
+cross-validation iterations, with the apparent training value marked for
+comparison.
+
+Figure 5. Standardised effect size for each signature gene in the discovery
+cohort, the transfer cohort and blood, showing attenuation for ABCA6 and
+CRLF1 and directional reversal for TNFRSF11B.
+
+Figure 6. Principal component analysis of the transfer cohort, with samples
+coloured by diagnosis, which within this dataset is equivalent to colouring
+by submission cohort.
+
+Supplementary Figure S1. Spearman correlation between each signature gene and
+oligodendrocyte marker score in the discovery cohort.
+
+Supplementary Figure S2. ABCA6 expression in oligodendrocytes in GSE138852,
+shown alongside oligodendrocyte proportion by condition, with the false
+discovery rate indicated.

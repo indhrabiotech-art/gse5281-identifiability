@@ -1,0 +1,2 @@
+n_samples,n_columns,design_rank,rank_deficient,diagnosis_equals_submission_indicator
+23,3,2,True,True

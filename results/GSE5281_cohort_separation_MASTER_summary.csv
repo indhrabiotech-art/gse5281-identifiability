@@ -1,0 +1,2 @@
+n_samples,n_control,n_AD,submission_date_perfectly_nested,workflow_variables_different,PC1_variance,PC1_AUC,PC2_AUC,PC_classifier_LOOCV_AUC,PC_classifier_LOOCV_accuracy
+23,13,10,True,6,0.2696938244251239,0.11538461538461536,0.9076923076923076,1.0,1.0

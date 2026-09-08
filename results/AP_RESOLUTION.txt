@@ -1,0 +1,23 @@
+columns: ['GSM', 'Diagnosis', 'Predicted_probability_AD', 'Predicted_class']  n = 23
+
+AD=10  Control=13
+=== RECOMPUTED FROM LOCKED PREDICTIONS ===
+  ROC-AUC = 0.661538
+  AP      = 0.603000
+  Brier   = 0.432163
+
+  compare: 0.603000 / 0.635252 / 0.649287
+
+=== SECOND PREDICTION FILE (Final_Characterization) ===
+  ROC-AUC = 0.684615
+  AP      = 0.635252
+=== EXTERNAL CALIBRATION (recomputed) ===
+  calibration slope      = 1.260639
+  calibration intercept  = 5.648943
+  Brier score            = 0.432163
+  ROC-AUC                = 0.661538
+
+  slope << 1 => predictions far too extreme (overconfident)
+  compare logged: slope 0.344136, intercept 0.087491, Brier 0.265597
+
+written -> 14_Canonical/CANONICAL_calibration.csv

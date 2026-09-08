@@ -1,0 +1,217 @@
+category,term,number_of_genes,number_of_genes_in_background,ncbiTaxonId,inputGenes,preferredNames,p_value,fdr,description,Seed_Gene,Neighborhood_Size
+Function,GO:0140359,3,50,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.84e-08,9.07e-05,ABC-type transporter activity,ABCA6,3
+Function,GO:0005319,3,163,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.87e-07,0.00097,Lipid transporter activity,ABCA6,3
+KEGG,hsa02010,3,45,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.36e-08,4.56e-06,ABC transporters,ABCA6,3
+SMART,SM00382,3,144,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",4.07e-07,0.00033,ATPases associated with a variety of cellular activities,ABCA6,3
+InterPro,IPR026082,3,12,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.57e-10,2.56e-06,ABC transporter A,ABCA6,3
+InterPro,IPR003439,3,49,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.73e-08,6.23e-05,"ABC transporter-like, ATP-binding domain",ABCA6,3
+InterPro,IPR003593,3,139,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.67e-07,0.00088,AAA+ ATPase domain,ABCA6,3
+Pfam,PF12698,3,12,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.57e-10,8.25e-07,ABC-2 family transporter protein,ABCA6,3
+PMID,PMID:12150964,3,3,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.57e-11,8.07e-05,"(2002) Molecular structure of a novel cholesterol-responsive A subclass ABC transporter, ABCA9.",ABCA6,3
+PMID,PMID:35759117,3,6,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",6.59e-11,0.00011,(2022) Comprehensive Analysis of ABCA Family Members in Lung Adenocarcinoma with Prognostic Values.,ABCA6,3
+PMID,PMID:24957074,3,5,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",4.39e-11,0.00011,(2014) ABCA transporter gene expression and poor outcome in epithelial ovarian cancer.,ABCA6,3
+PMID,PMID:12821155,3,5,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",4.39e-11,0.00011,"(2003) ABCA10, a novel cholesterol-regulated ABCA6-like ABC transporter.",ABCA6,3
+PMID,PMID:17541169,3,9,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.73e-10,0.00018,(2007) Correlation of induction of ATP binding cassette transporter A5 (ABCA5) and ABCB1 mRNAs with differentiation state of human colon tumor.,ABCA6,3
+PMID,PMID:21435020,3,11,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",2.86e-10,0.00024,(2011) Expression of the Abca-subfamily of genes in Abcc6-- mice--upregulation of Abca4.,ABCA6,3
+PMID,PMID:33238634,3,13,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",4.39e-10,0.00032,(2020) 5 Untranslated Region Elements Show High Abundance and Great Variability in Homologous ABCA Subfamily Genes.,ABCA6,3
+PMID,PMID:28677036,3,13,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",4.39e-10,0.00032,(2017) DeltaNp73 regulates the expression of the multidrug-resistance genes ABCB1 and ABCB5 in breast cancer and melanoma cells - a short report.,ABCA6,3
+PMID,PMID:30925591,3,15,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",6.4e-10,0.00037,(2019) A harlequin ichthyosis pig model with a novel ABCA12 mutation can be rescued by acitretin treatment.,ABCA6,3
+PMID,PMID:34638622,3,16,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",7.6e-10,0.00039,(2021) Structure-Based Understanding of ABCA3 Variants.,ABCA6,3
+PMID,PMID:30611276,3,17,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",8.95e-10,0.00042,(2019) Abcc6 deficiency in mice leads to altered ABC transporter gene expression in metabolic active tissues.,ABCA6,3
+PMID,PMID:35783152,3,19,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.21e-09,0.00052,(2022) Identification of ABCA5 among ATP-Binding Cassette Transporter Family as a New Biomarker for Colorectal Cancer.,ABCA6,3
+PMID,PMID:19230850,3,22,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.8e-09,0.00071,(2009) The role of the photoreceptor ABC transporter ABCA4 in lipid transport and Stargardt macular degeneration.,ABCA6,3
+PMID,PMID:26319982,3,23,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",2.04e-09,0.00075,(2015) Identification of Aberrant Chromosomal Regions in Human Breast Cancer Using Gene Expression Data and Related Gene Information.,ABCA6,3
+PMID,PMID:26472499,3,23,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",2.04e-09,0.00075,(2015) Marine medaka ATP-binding cassette (ABC) superfamily and new insight into teleost Abch nomenclature.,ABCA6,3
+PMID,PMID:33719339,3,27,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.19e-09,0.001,(2021) Feature Selection for Breast Cancer Classification by Integrating Somatic Mutation and Gene Expression.,ABCA6,3
+PMID,PMID:31416138,3,29,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.89e-09,0.0012,"(2019) Antioxidant, Anti-Inflammatory, and Multidrug Resistance Modulation Activity of Silychristin Derivatives.",ABCA6,3
+PMID,PMID:37012431,3,31,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",4.7e-09,0.0013,(2023) Rewiring of the 3D genome during acquisition of carboplatin resistance in a triple-negative breast cancer patient-derived xenograft.,ABCA6,3
+PMID,PMID:37851804,3,32,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.14e-09,0.0014,(2023) BCRP drives intrinsic chemoresistance in chemotherapy-naive breast cancer brain metastasis.,ABCA6,3
+PMID,PMID:34777633,3,34,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",6.1e-09,0.0014,(2021) The Upregulation of PLXDC2 Correlates with Immune Microenvironment Characteristics and Predicts Prognosis in Gastric Cancer.,ABCA6,3
+PMID,PMID:30407748,3,32,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.14e-09,0.0014,(2019) Gestational age-dependent gene expression profiling of ATP-binding cassette transporters in the healthy human placenta.,ABCA6,3
+PMID,PMID:27709738,3,32,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.14e-09,0.0014,(2016) Wnt-beta-catenin signaling regulates ABCC3 (MRP3) transporter expression in colorectal cancer.,ABCA6,3
+PMID,PMID:24831815,3,32,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.14e-09,0.0014,(2014) Mutations in the cholesterol transporter gene ABCA5 are associated with excessive hair overgrowth.,ABCA6,3
+PMID,PMID:22403555,3,33,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.6e-09,0.0014,(2012) A-Subclass ATP-Binding Cassette Proteins in Brain Lipid Homeostasis and Neurodegeneration.,ABCA6,3
+PMID,PMID:34737618,3,37,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",7.75e-09,0.0016,(2021) Identification of ABCC5 Among ATP-Binding Cassette Transporter Family as a New Biomarker for Hepatocellular Carcinoma Based on Bioinformatics Analysis.,ABCA6,3
+PMID,PMID:29401721,3,38,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",8.36e-09,0.0017,(2018) Cell Migration Related to MDR-Another Impediment to Effective Chemotherapy?,ABCA6,3
+PMID,PMID:36576228,3,43,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.19e-08,0.0023,"(2023) ABCA9, an ER cholesterol transporter, inhibits breast cancer cell proliferation via SREBP-2 signaling.",ABCA6,3
+PMID,PMID:35966264,3,43,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.19e-08,0.0023,"(2022) Genome-Wide Identification, Characterisation and Phylogenetic Analysis of 52 Striped Catfish (Pangasianodon hypophthalmus) ATP-Binding Cassette (ABC) Transporter Genes.",ABCA6,3
+PMID,PMID:38020048,3,45,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.36e-08,0.0024,(2023) ABCB1 Regulates Immune Genes in Breast Cancer.,ABCA6,3
+PMID,PMID:34648531,3,45,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.36e-08,0.0024,(2021) Identification of candidate genes on the basis of SNP by time-lagged heat stress interactions for milk production traits in German Holstein cattle.,ABCA6,3
+PMID,PMID:30090003,3,45,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.36e-08,0.0024,(2018) ATP-binding cassette transporters in progression and clinical outcome of pancreatic cancer: What is the way forward?,ABCA6,3
+PMID,PMID:35631534,3,47,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.54e-08,0.0025,(2022) DNA Copy Number Aberrations and Expression of ABC Transporter Genes in Breast Tumour: Correlation with the Effect of Neoadjuvant Chemotherapy and Prognosis of the Disease.,ABCA6,3
+PMID,PMID:33945502,3,49,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.73e-08,0.0025,(2021) Adipocyte-like signature in ovarian cancer minimal residual disease identifies metabolic vulnerabilities of tumor-initiating cells.,ABCA6,3
+PMID,PMID:34572110,3,48,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.63e-08,0.0025,(2021) Impact of ABC Transporters in Osteosarcoma and Ewings Sarcoma: Which Are Involved in Chemoresistance and Which Are Not?,ABCA6,3
+PMID,PMID:26286669,3,48,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.63e-08,0.0025,(2015) Validated MicroRNA Target Databases: An Evaluation.,ABCA6,3
+PMID,PMID:22553972,3,50,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.84e-08,0.0026,(2012) ATP-binding cassette transporters in immortalised human brain microvascular endothelial cells in normal and hypoxic conditions.,ABCA6,3
+PMID,PMID:25505559,3,51,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.95e-08,0.0027,(2013) Expression pattern of human ATP-binding cassette transporters in skin.,ABCA6,3
+PMID,PMID:28819395,3,55,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",2.42e-08,0.0033,(2017) Downregulation of ABC Transporters in Non-neoplastic Tissues Confers Better Prognosis for Pancreatic and Colorectal Cancer Patients.,ABCA6,3
+PMID,PMID:31052165,3,72,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",5.3e-08,0.007,(2019) Biological Insights into Chemotherapy Resistance in Ovarian Cancer.,ABCA6,3
+PMID,PMID:32873298,3,80,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",7.21e-08,0.0093,(2020) High expression of MKK3 is associated with worse clinical outcomes in African American breast cancer patients.,ABCA6,3
+PMID,PMID:32403949,3,86,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",8.91e-08,0.0112,(2020) Transcriptional and Cellular Diversity of the Human Heart.,ABCA6,3
+PMID,PMID:27727291,3,88,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",9.53e-08,0.0117,(2016) Early Transcriptomic Response to LDL and oxLDL in Human Vascular Smooth Muscle Cells.,ABCA6,3
+PMID,PMID:32710948,2,3,9606,"ABCA9,ABCA8","ABCA9,ABCA8",1.55e-07,0.0181,(2020) Systematic analysis of the ABC transporter family in hepatocellular carcinoma reveals the importance of ABCB6 in regulating ferroptosis.,ABCA6,3
+PMID,PMID:30283400,3,103,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.51e-07,0.0181,(2018) Sterol Metabolism and Transport in Atherosclerosis and Cancer.,ABCA6,3
+PMID,PMID:12532264,2,3,9606,"ABCA6,ABCA9","ABCA6,ABCA9",1.55e-07,0.0181,(2003) Evolutionary analysis of a cluster of ATP-binding cassette (ABC) genes.,ABCA6,3
+PMID,PMID:29520568,2,4,9606,"ABCA6,ABCA9","ABCA6,ABCA9",2.32e-07,0.0259,(2018) Gene expression of A6-like subgroup of ATP-binding cassette transporters in mouse brain parenchyma and microvessels.,ABCA6,3
+PMID,PMID:11478798,2,4,9606,"ABCA6,ABCA8","ABCA6,ABCA8",2.32e-07,0.0259,"(2001) ABCA6, a novel a subclass ABC transporter.",ABCA6,3
+PMID,PMID:35714911,3,128,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",2.87e-07,0.0308,(2022) New dawn for cancer cell death: Emerging role of lipid metabolism.,ABCA6,3
+PMID,PMID:37153595,3,135,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.36e-07,0.0353,(2023) Diversity and heterogeneity in human breast cancer adipose tissue revealed at single-nucleus resolution.,ABCA6,3
+RCTM,HSA-382556,3,102,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",1.47e-07,0.00034,ABC-family proteins mediated transport,ABCA6,3
+RCTM,HSA-1369062,2,18,9606,"ABCA6,ABCA9","ABCA6,ABCA9",2.94e-06,0.0034,ABC transporters in lipid homeostasis,ABCA6,3
+NetworkNeighborAL,CL:12311,3,12,9606,"ABCA6,ABCA9,ABCA8","ABCA6,ABCA9,ABCA8",3.57e-10,1.63e-06,"ABC-type xenobiotic transporter activity, and ABC transporters in lipid homeostasis",ABCA6,3
+COMPARTMENTS,GOCC:0097058,2,2,9606,"CLCF1,CRLF1","CLCF1,CRLF1",6.49e-07,0.0015,CRLF-CLCF1 complex,CRLF1,7
+COMPARTMENTS,GOCC:0097059,2,2,9606,"CLCF1,CNTFR","CLCF1,CNTFR",6.49e-07,0.0015,CNTFR-CLCF1 complex,CRLF1,7
+COMPARTMENTS,GOCC:0005576,6,2079,9606,"IL12A,CLCF1,IL27,CNTF,CNTFR,CRLF1","IL12A,CLCF1,IL27,CNTF,CNTFR,CRLF1",8.88e-06,0.0058,Extracellular region,CRLF1,7
+COMPARTMENTS,GOCC:0005615,5,1027,9606,"IL12A,CLCF1,IL27,CNTFR,CRLF1","IL12A,CLCF1,IL27,CNTFR,CRLF1",7.5e-06,0.0058,Extracellular space,CRLF1,7
+Process,GO:0042531,4,65,9606,"IL12A,CLCF1,CNTF,CRLF1","IL12A,CLCF1,CNTF,CRLF1",4.78e-09,7.49e-05,Positive regulation of tyrosine phosphorylation of STAT protein,CRLF1,7
+Process,GO:0043524,4,153,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.33e-07,0.0007,Negative regulation of neuron apoptotic process,CRLF1,7
+Process,GO:0042127,6,1669,9606,"IL12A,CLCF1,IL27,CNTF,CNTFR,CRLF1","IL12A,CLCF1,IL27,CNTF,CNTFR,CRLF1",2.43e-06,0.0048,Regulation of cell population proliferation,CRLF1,7
+Process,GO:0019221,4,369,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",4.23e-06,0.0066,Cytokine-mediated signaling pathway,CRLF1,7
+Process,GO:0008284,5,945,9606,"IL12A,CLCF1,CNTF,CNTFR,CRLF1","IL12A,CLCF1,CNTF,CNTFR,CRLF1",4.99e-06,0.0071,Positive regulation of cell population proliferation,CRLF1,7
+Process,GO:0070120,2,9,9606,"CNTF,CNTFR","CNTF,CNTFR",5.94e-06,0.0078,Ciliary neurotrophic factor-mediated signaling pathway,CRLF1,7
+Process,GO:2000672,2,11,9606,"CNTFR,CRLF1","CNTFR,CRLF1",8.42e-06,0.0102,Negative regulation of motor neuron apoptotic process,CRLF1,7
+Process,GO:0002822,3,179,9606,"IL12A,CLCF1,IL27","IL12A,CLCF1,IL27",2.64e-05,0.0276,Regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains,CRLF1,7
+Process,GO:0042981,5,1462,9606,"IL12A,CLCF1,CNTF,CNTFR,CRLF1","IL12A,CLCF1,CNTF,CNTFR,CRLF1",4.2e-05,0.0387,Regulation of apoptotic process,CRLF1,7
+Component,GO:0097058,2,2,9606,"CLCF1,CRLF1","CLCF1,CRLF1",6.49e-07,0.0013,CRLF-CLCF1 complex,CRLF1,7
+Component,GO:0097059,2,2,9606,"CLCF1,CNTFR","CLCF1,CNTFR",6.49e-07,0.0013,CNTFR-CLCF1 complex,CRLF1,7
+Function,GO:0005125,4,234,9606,"IL12A,CLCF1,IL27,CNTF","IL12A,CLCF1,IL27,CNTF",7.06e-07,0.0035,Cytokine activity,CRLF1,7
+Function,GO:0005126,4,270,9606,"IL12A,CLCF1,IL27,CNTF","IL12A,CLCF1,IL27,CNTF",1.24e-06,0.0035,Cytokine receptor binding,CRLF1,7
+Function,GO:0005127,2,8,9606,"CLCF1,CNTF","CLCF1,CNTF",4.86e-06,0.008,Ciliary neurotrophic factor receptor binding,CRLF1,7
+Function,GO:0008083,3,162,9606,"IL12A,CLCF1,CNTF","IL12A,CLCF1,CNTF",1.97e-05,0.0161,Growth factor activity,CRLF1,7
+Function,GO:0019955,3,141,9606,"IL12A,CNTFR,CRLF1","IL12A,CNTFR,CRLF1",1.31e-05,0.0161,Cytokine binding,CRLF1,7
+Function,GO:0005102,5,1499,9606,"IL12A,CLCF1,IL27,CNTF,CNTFR","IL12A,CLCF1,IL27,CNTF,CNTFR",4.74e-05,0.026,Signaling receptor binding,CRLF1,7
+DISEASES,DOID:0060294,3,5,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",1.54e-09,7.06e-06,Cold-induced sweating syndrome,CRLF1,7
+DISEASES,DOID:0080329,2,2,9606,"CNTFR,CRLF1","CNTFR,CRLF1",6.49e-07,0.0015,Cold-induced sweating syndrome 1,CRLF1,7
+Keyword,KW-0202,3,187,9606,"IL12A,CLCF1,IL27","IL12A,CLCF1,IL27",3e-05,0.0202,Cytokine,CRLF1,7
+KEGG,hsa04060,5,282,9606,"IL12A,CLCF1,IL27,CNTF,CNTFR","IL12A,CLCF1,IL27,CNTF,CNTFR",1.3e-08,4.36e-06,Cytokine-cytokine receptor interaction,CRLF1,7
+KEGG,hsa04630,3,158,9606,"IL12A,CNTF,CNTFR","IL12A,CNTF,CNTFR",1.83e-05,0.0031,JAK-STAT signaling pathway,CRLF1,7
+InterPro,IPR009079,4,56,9606,"IL12A,CLCF1,IL27,CNTF","IL12A,CLCF1,IL27,CNTF",2.7e-09,1.94e-05,"Four-helical cytokine-like, core",CRLF1,7
+Pfam,PF01110,2,2,9606,"CLCF1,CNTF","CLCF1,CNTF",6.49e-07,0.0015,Ciliary neurotrophic factor,CRLF1,7
+PMID,PMID:36930708,5,29,9606,"CLCF1,IL27,CNTF,CNTFR,CRLF1","CLCF1,IL27,CNTF,CNTFR,CRLF1",2.36e-13,1.21e-06,(2023) Structural insights into the assembly of gp130 family cytokine signaling complexes.,CRLF1,7
+PMID,PMID:26198769,4,5,9606,"CLCF1,IL27,CNTFR,CRLF1","CLCF1,IL27,CNTFR,CRLF1",7.02e-13,1.21e-06,"(2015) Cardiotrophin-like cytokine factor 1 (CLCF1) and neuropoietin (NP) signalling and their roles in development, adulthood, cancer and degenerative disorders.",CRLF1,7
+PMID,PMID:16782820,4,4,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",3.9e-13,1.21e-06,"(2006) Inactivation of cardiotrophin-like cytokine, a second ligand for ciliary neurotrophic factor receptor, leads to cold-induced sweating syndrome in a patient.",CRLF1,7
+PMID,PMID:17436251,4,6,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.17e-12,1.5e-06,(2007) Mutations in cytokine receptor-like factor 1 (CRLF1) account for both Crisponi and cold-induced sweating syndromes.,CRLF1,7
+PMID,PMID:35402550,5,48,9606,"CLCF1,IL27,CNTF,CNTFR,CRLF1","CLCF1,IL27,CNTF,CNTFR,CRLF1",2.42e-12,2.49e-06,(2022) The Role of Interleukin-6 Family Members in Cardiovascular Diseases.,CRLF1,7
+PMID,PMID:29507344,4,12,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.01e-11,8.68e-06,(2018) Effect of human very low-density lipoproteins on cardiotrophin-like cytokine factor 1 (CLCF1) activity.,CRLF1,7
+PMID,PMID:33430863,4,16,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",2.69e-11,1.98e-05,(2021) Association of cardiotrophin-like cytokine factor 1 levels in peripheral blood mononuclear cells with bone mineral density and osteoporosis in postmenopausal women.,CRLF1,7
+PMID,PMID:28058407,4,19,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",4.92e-11,3.17e-05,(2016) Neuropathies of Stuve-Wiedemann Syndrome due to mutations in leukemia inhibitory factor receptor (LIFR) gene.,CRLF1,7
+PMID,PMID:25843671,4,19,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",4.92e-11,3.17e-05,(2015) Janus kinase 2signal transducer and activator of transcription 3 inhibitors attenuate the effect of cardiotrophin-like cytokine factor 1 and human focal segmental glomerulosclerosis serum on glomerular filtration barrier.,CRLF1,7
+PMID,PMID:30871285,4,23,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",9.75e-11,5.02e-05,(2019) Current Knowledge of IL-6 Cytokine Family Members in Acute and Chronic Kidney Disease.,CRLF1,7
+PMID,PMID:34073576,5,107,9606,"CLCF1,IL27,CNTF,CNTFR,CRLF1","CLCF1,IL27,CNTF,CNTFR,CRLF1",1.13e-10,5.27e-05,(2021) Interleukins and Interleukin Receptors Evolutionary History and Origin in Relation to CD4+ T Cell Evolution.,CRLF1,7
+PMID,PMID:24618404,4,25,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.32e-10,5.66e-05,(2014) Stuve-Wiedemann syndrome: LIFR and associated cytokines in clinical course and etiology.,CRLF1,7
+PMID,PMID:26858303,4,28,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",2e-10,7.9e-05,"(2016) Cytokine-Like Factor 1, an Essential Facilitator of Cardiotrophin-Like Cytokine:Ciliary Neurotrophic Factor Receptor alpha Signaling and sorLA-Mediated Turnover.",CRLF1,7
+PMID,PMID:33097691,4,29,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",2.27e-10,8.35e-05,(2020) The miR-30a-5pCLCF1 axis regulates sorafenib resistance and aerobic glycolysis in hepatocellular carcinoma.,CRLF1,7
+PMID,PMID:28605657,4,33,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",3.67e-10,0.00013,(2017) Muscle as a paracrine and endocrine organ.,CRLF1,7
+PMID,PMID:27054527,3,3,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",5.49e-10,0.00018,(2017) Corneal alterations in CrisponiCISS1 syndrome: A slit-lamp biomicroscopy and in vivo confocal microscopy corneal report.,CRLF1,7
+PMID,PMID:24073352,3,3,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",5.49e-10,0.00018,(2013) Cold induced sweating syndrome with urinary system anomaly association.,CRLF1,7
+PMID,PMID:23355913,3,3,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",5.49e-10,0.00018,(2012) Role of cytokine receptor-like factor 1 in hepatic stellate cells and fibrosis.,CRLF1,7
+PMID,PMID:19098279,3,3,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",5.49e-10,0.00018,(2009) Neonatal death in mice lacking cardiotrophin-like cytokine is associated with multifocal neuronal hypoplasia.,CRLF1,7
+PMID,PMID:14523086,3,3,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",5.49e-10,0.00018,(2003) Cardiotrophin-like cytokinecytokine-like factor 1 is an essential trophic factor for lumbar and facial motoneurons in vivo.,CRLF1,7
+PMID,PMID:31998465,4,41,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",8.26e-10,0.0002,(2019) Gender associated effects of the ethanolic extracts of Chinese propolis on the hepatic transcriptome in ethanol-treated mice.,CRLF1,7
+PMID,PMID:15450249,3,4,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",9.6e-10,0.00022,(2004) Novel neurotrophin-1B cell-stimulating factor-3 (NNT-1BSF-3)cardiotrophin-like cytokine (CLC)--a novel gp130 cytokine with pleiotropic functions.,CRLF1,7
+PMID,PMID:28232471,4,45,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.17e-09,0.00026,(2017) Distinct populations of inflammatory fibroblasts and myofibroblasts in pancreatic cancer.,CRLF1,7
+PMID,PMID:28951873,4,46,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.28e-09,0.00027,(2017) Multiple Targets for Novel Therapy of FSGS Associated with Circulating Permeability Factor.,CRLF1,7
+PMID,PMID:35571403,4,48,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.5e-09,0.00031,"(2022) Bromodomain-containing protein 4 activates cardiotrophin-like cytokine factor 1, an unfavorable prognostic biomarker, and promotes glioblastoma in vitro.",CRLF1,7
+PMID,PMID:32670064,4,49,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",1.62e-09,0.00031,(2020) Treating Different Diseases With the Same Method-A Traditional Chinese Medicine Concept Analyzed for Its Biological Basis.,CRLF1,7
+PMID,PMID:10966616,3,5,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",1.54e-09,0.00031,(2000) CLF associates with CLC to form a functional heteromeric ligand for the CNTF receptor complex.,CRLF1,7
+PMID,PMID:32998371,4,50,9606,"CLCF1,IL27,CNTF,CRLF1","CLCF1,IL27,CNTF,CRLF1",1.75e-09,0.00032,(2020) IL-12 and IL-23-Close Relatives with Structural Homologies but Distinct Immunological Functions.,CRLF1,7
+PMID,PMID:27696410,3,6,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",2.3e-09,0.00041,(2017) Adult ciliary neurotrophic factor receptors help maintain facial motor neuron choline acetyltransferase expression in vivo following nerve crush.,CRLF1,7
+PMID,PMID:15683542,3,6,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",2.3e-09,0.00041,(2005) clc is co-expressed with clf or cntfr in developing mouse muscles.,CRLF1,7
+PMID,PMID:35055176,4,59,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",3.3e-09,0.00055,"(2022) CRLF1 and CLCF1 in Development, Health and Disease.",CRLF1,7
+PMID,PMID:31497877,3,7,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",3.29e-09,0.00055,"(2020) Crisponicold-induced sweating syndrome: Differential diagnosis, pathogenesis and treatment concepts.",CRLF1,7
+PMID,PMID:30902524,3,7,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",3.29e-09,0.00055,(2019) Muscle ciliary neurotrophic factor receptor alpha helps maintain choline acetyltransferase levels in denervated motor neurons following peripheral nerve lesion.,CRLF1,7
+PMID,PMID:23504871,3,7,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",3.29e-09,0.00055,(2013) Muscle ciliary neurotrophic factor receptor alpha promotes axonal regeneration and functional recovery following peripheral nerve lesion.,CRLF1,7
+PMID,PMID:22986012,3,8,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",4.52e-09,0.00066,(2012) The cytokines cardiotrophin-like cytokinecytokine-like factor-1 (CLCCLF) and ciliary neurotrophic factor (CNTF) differ in their receptor specificities.,CRLF1,7
+PMID,PMID:12843240,3,8,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",4.52e-09,0.00066,(2003) Glial reactivity in ciliary neurotrophic factor-deficient mice after optic nerve lesion.,CRLF1,7
+PMID,PMID:40708997,3,10,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",7.84e-09,0.0011,(2025) Association analysis of single nucleotide polymorphisms in the LIFR gene with lambing number in sheep.,CRLF1,7
+PMID,PMID:36222303,3,10,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",7.84e-09,0.0011,"(2022) Uncovering the promiscuous activity of IL-6 proteins: A multi-dimensional analysis of phylogeny, classification and residue conservation.",CRLF1,7
+PMID,PMID:30554447,3,10,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",7.84e-09,0.0011,(2019) Muscle ciliary neurotrophic factor receptor alpha contributes to motor neuron STAT3 activation following peripheral nerve lesion.,CRLF1,7
+PMID,PMID:11294841,3,10,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",7.84e-09,0.0011,(2001) Signaling pathways recruited by the cardiotrophin-like cytokinecytokine-like factor-1 composite cytokine: specific requirement of the membrane-bound form of ciliary neurotrophic factor receptor alpha component.,CRLF1,7
+PMID,PMID:31156640,4,80,9606,"CLCF1,IL27,CNTF,CNTFR","CLCF1,IL27,CNTF,CNTFR",1.06e-08,0.0013,(2019) Coordination of Immune-Stroma Crosstalk by IL-6 Family Cytokines.,CRLF1,7
+PMID,PMID:30578761,3,12,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.25e-08,0.0015,(2019) Leukemia inhibitory factor signaling in Xenopus embryo: Insights from gain of function analysis and dominant negative mutant of the receptor.,CRLF1,7
+PMID,PMID:35530960,3,13,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",1.53e-08,0.0018,(2022) CLCF1 is up-regulated in renal ischemia reperfusion injury and may associate with FOXO3.,CRLF1,7
+PMID,PMID:21164505,3,14,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.86e-08,0.0022,(2011) Gp130 cytokines exert differential patterns of crosstalk in adipocytes both in vitro and in vivo.,CRLF1,7
+PMID,PMID:17563726,3,14,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",1.86e-08,0.0022,(2007) Expression of ciliary neurotrophic factor (CNTF) and its tripartite receptor complex by cells of the human optic nerve head.,CRLF1,7
+PMID,PMID:15249728,3,14,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.86e-08,0.0022,(2004) Comparative study of gp130 cytokine effects on corticotroph AtT-20 cells--redundancy or specificity of neuroimmunoendocrine modulators?,CRLF1,7
+PMID,PMID:21106488,4,103,9606,"CLCF1,IL27,CNTF,CNTFR","CLCF1,IL27,CNTF,CNTFR",2.84e-08,0.0031,(2010) Evolutionary divergence and functions of the human interleukin (IL) gene family.,CRLF1,7
+PMID,PMID:32530750,3,17,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",3.12e-08,0.0033,(2020) Different roles of interleukin 6 and interleukin 11 in the liver: implications for therapy.,CRLF1,7
+PMID,PMID:25540807,3,17,9606,"CLCF1,CNTF,CRLF1","CLCF1,CNTF,CRLF1",3.12e-08,0.0033,(2014) Unusual Stuve-Wiedemann syndrome with complete maternal chromosome 5 isodisomy.,CRLF1,7
+PMID,PMID:26146641,3,18,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",3.64e-08,0.0037,"(2015) Renal and Hematological Effects of CLCF-1, a B-Cell-Stimulating Cytokine of the IL-6 Family.",CRLF1,7
+PMID,PMID:24616665,3,19,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",4.21e-08,0.0043,(2014) Trophic factors as modulators of motor neuron physiology and survival: implications for ALS therapy.,CRLF1,7
+PMID,PMID:36034849,3,20,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",4.85e-08,0.0048,(2022) A combined aging and immune prognostic signature predict prognosis and responsiveness to immunotherapy in melanoma.,CRLF1,7
+PMID,PMID:21375496,3,20,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",4.85e-08,0.0048,(2011) The gp130 receptor cytokine family: regulators of adipocyte development and function.,CRLF1,7
+PMID,PMID:25259790,3,21,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",5.54e-08,0.0053,"(2014) Recombinant p35 from bacteria can form Interleukin (IL-)12, but Not IL-35.",CRLF1,7
+PMID,PMID:31538427,3,22,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",6.29e-08,0.0059,(2019) microRNA-146a Promotes Growth of Acute Leukemia Cells by Downregulating Ciliary Neurotrophic Factor Receptor and Activating JAK2STAT3 Signaling.,CRLF1,7
+PMID,PMID:28265003,3,24,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",8e-08,0.0073,(2017) SorLA in Interleukin-6 Signaling and Turnover.,CRLF1,7
+PMID,PMID:28491286,3,24,9606,"CLCF1,CNTF,CRLF1","CLCF1,CNTF,CRLF1",8e-08,0.0073,(2017) Unwinding focal segmental glomerulosclerosis.,CRLF1,7
+PMID,PMID:22319590,3,24,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",8e-08,0.0073,(2012) STAT3 is activated by JAK2 independent of key oncogenic driver mutations in non-small cell lung carcinoma.,CRLF1,7
+PMID,PMID:34603342,3,25,9606,"CLCF1,IL27,CRLF1","CLCF1,IL27,CRLF1",8.96e-08,0.0078,(2021) A Chaperone-Like Role for EBI3 in Collaboration With Calnexin Under Inflammatory Conditions.,CRLF1,7
+PMID,PMID:20554759,3,25,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",8.96e-08,0.0078,(2010) Forced homo- and heterodimerization of all gp130-type receptor complexes leads to constitutive ligand-independent signaling and cytokine-independent growth.,CRLF1,7
+PMID,PMID:31552057,3,27,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",1.11e-07,0.0094,(2019) Cardiotrophin-Like Cytokine Factor 1 Exhibits a Myeloid-Biased Hematopoietic-Stimulating Function.,CRLF1,7
+PMID,PMID:37061565,3,28,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",1.23e-07,0.0102,(2023) Cytokimera GIL-11 rescued IL-6R deficient mice from partial hepatectomy-induced death by signaling via non-natural gp130:LIFR:IL-11R complexes.,CRLF1,7
+PMID,PMID:31700175,3,29,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.36e-07,0.0111,(2019) Antitumor activity of an engineered decoy receptor targeting CLCF1-CNTFR signaling in lung adenocarcinoma.,CRLF1,7
+PMID,PMID:23818941,3,29,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",1.36e-07,0.0111,(2013) Cytokine receptor-like factor 1 (CRLF1) protects against 6-hydroxydopamine toxicity independent of the gp130JAK signaling pathway.,CRLF1,7
+PMID,PMID:32780864,3,31,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.63e-07,0.0129,(2020) CNTF Prevents Development of Outer Retinal Neovascularization Through Upregulation of CxCl10.,CRLF1,7
+PMID,PMID:37069261,3,32,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",1.79e-07,0.0139,"(2023) Targeting IL-6 trans-signalling: past, present and future prospects.",CRLF1,7
+PMID,PMID:21715184,3,32,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",1.79e-07,0.0139,(2011) Cytokine-like factor 1 (CLF1): life after development?,CRLF1,7
+PMID,PMID:26279360,3,35,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",2.3e-07,0.0174,(2015) Interleukin 35: Critical regulator of immunity and lymphocyte-mediated diseases.,CRLF1,7
+PMID,PMID:38045285,3,38,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",2.91e-07,0.0217,(2023) Spatial transcriptomics defines injury-specific microenvironments in the adult mouse kidney and novel cellular interactions in regeneration and disease.,CRLF1,7
+PMID,PMID:20044292,3,38,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",2.91e-07,0.0217,(2010) Upregulation of elastase activity in aorta in mucopolysaccharidosis I and VII dogs may be due to increased cytokine expression.,CRLF1,7
+PMID,PMID:33606986,3,39,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",3.13e-07,0.0227,(2021) Structural basis for IL-12 and IL-23 receptor sharing reveals a gateway for shaping actions on T versus NK cells.,CRLF1,7
+PMID,PMID:29163025,3,39,9606,"CNTF,CNTFR,CRLF1","CNTF,CNTFR,CRLF1",3.13e-07,0.0227,(2017) BDNFtrkB Induction of Calcium Transients through Cav2.2 Calcium Channels in Motoneurons Corresponds to F-actin Assembly and Growth Cone Formation on beta2-Chain Laminin (221).,CRLF1,7
+PMID,PMID:32788655,3,40,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",3.37e-07,0.0237,"(2020) The JAK1STAT3SOCS3 axis in bone development, physiology, and pathology.",CRLF1,7
+PMID,PMID:30298554,3,40,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",3.37e-07,0.0237,(2019) Annotating Transcriptional Effects of Genetic Variants in Disease-Relevant Tissue: Transcriptome-Wide Allelic Imbalance in Osteoarthritic Cartilage.,CRLF1,7
+PMID,PMID:37692101,3,44,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",4.42e-07,0.0303,(2023) Neurotrophic factors in the physiology of motor neurons and their role in the pathobiology and therapeutic approach to amyotrophic lateral sclerosis.,CRLF1,7
+PMID,PMID:23880850,3,44,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",4.42e-07,0.0303,(2013) Role of cytokine signaling during nervous system development.,CRLF1,7
+PMID,PMID:32930881,3,45,9606,"CLCF1,CNTFR,CRLF1","CLCF1,CNTFR,CRLF1",4.71e-07,0.0315,(2020) The diversity of neuronal phenotypes in rodent and human autonomic ganglia.,CRLF1,7
+PMID,PMID:33334075,3,45,9606,"CLCF1,IL27,CNTF","CLCF1,IL27,CNTF",4.71e-07,0.0315,(2020) The Role of gp130 Cytokines in Tuberculosis.,CRLF1,7
+PMID,PMID:36233301,3,47,9606,"CLCF1,CNTF,CRLF1","CLCF1,CNTF,CRLF1",5.34e-07,0.0348,(2022) Calcium-Bound S100P Protein Is a Promiscuous Binding Partner of the Four-Helical Cytokines.,CRLF1,7
+PMID,PMID:40393625,2,3,9606,"CLCF1,CRLF1","CLCF1,CRLF1",1.08e-06,0.0417,(2025) High-yield production of recombinant CLCF1 protein fused with human serum albumin in animal cells and toxicity evaluation in rodents.,CRLF1,7
+PMID,PMID:37759746,3,59,9606,"CLCF1,CNTF,CRLF1","CLCF1,CNTF,CRLF1",1.03e-06,0.0417,(2023) Interaction of S100A6 Protein with the Four-Helical Cytokines.,CRLF1,7
+PMID,PMID:37795085,3,56,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",8.85e-07,0.0417,(2023) Current understanding of the molecular mechanisms of circulating permeability factor in focal segmental glomerulosclerosis.,CRLF1,7
+PMID,PMID:37945321,3,55,9606,"CLCF1,IL27,CNTF","CLCF1,IL27,CNTF",8.4e-07,0.0417,(2023) New perspectives in cancer immunotherapy: targeting IL-6 cytokine family.,CRLF1,7
+PMID,PMID:34779136,3,64,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.3e-06,0.0417,"(2022) LIF, a mitogen for choroidal endothelial cells, protects the choriocapillaris: implications for prevention of geographic atrophy.",CRLF1,7
+PMID,PMID:35328707,3,55,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",8.4e-07,0.0417,(2022) Stimulation of Osteoclast Formation by Oncostatin M and the Role of WNT16 as a Negative Feedback Regulator.,CRLF1,7
+PMID,PMID:35699517,2,3,9606,"CLCF1,CRLF1","CLCF1,CRLF1",1.08e-06,0.0417,(2022) Clinical and molecular genetic findings of Crisponicold-induced sweating syndrome (CSCISS) spectrum in patients from Turkey.,CRLF1,7
+PMID,PMID:36334441,2,2,9606,"CLCF1,CNTF","CLCF1,CNTF",6.49e-07,0.0417,(2022) CNTF induces Clcf1 in astrocytes to promote the differentiation of oligodendrocyte precursor cells.,CRLF1,7
+PMID,PMID:33910095,2,2,9606,"CNTFR,CRLF1","CNTFR,CRLF1",6.49e-07,0.0417,(2021) Three new cases of Crisponi cold induced sweating syndrome (CSCISS1) in Turkish families.,CRLF1,7
+PMID,PMID:34045653,3,60,9606,"IL27,CNTF,CRLF1","IL27,CNTF,CRLF1",1.08e-06,0.0417,"(2021) IL-30(+) (IL-27A): a familiar stranger in immunity, inflammation, and cancer.",CRLF1,7
+PMID,PMID:31932351,2,3,9606,"CNTF,CNTFR","CNTF,CNTFR",1.08e-06,0.0417,(2020) GDE3 regulates oligodendrocyte precursor proliferation via release of soluble CNTFRalpha.,CRLF1,7
+PMID,PMID:32023849,3,65,9606,"IL27,CNTF,CNTFR","IL27,CNTF,CNTFR",1.36e-06,0.0417,(2020) GP130 Cytokines in Breast Cancer and Bone.,CRLF1,7
+PMID,PMID:32267936,3,62,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.19e-06,0.0417,(2020) Historical overview of the interleukin-6 family cytokine.,CRLF1,7
+PMID,PMID:32313077,3,53,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",7.55e-07,0.0417,(2020) Impacts of ciliary neurotrophic factor on the retinal transcriptome in a mouse model of photoreceptor degeneration.,CRLF1,7
+PMID,PMID:30885765,2,2,9606,"IL12A,CRLF1","IL12A,CRLF1",6.49e-07,0.0417,(2019) Revisiting the combinatorial potential of cytokine subunits in the IL-12 family.,CRLF1,7
+PMID,PMID:30995503,3,53,9606,"IL27,CNTF,CRLF1","IL27,CNTF,CRLF1",7.55e-07,0.0417,(2019) The Immunobiology of the Interleukin-12 Family: Room for Discovery.,CRLF1,7
+PMID,PMID:28255204,3,67,9606,"IL27,CNTF,CRLF1","IL27,CNTF,CRLF1",1.49e-06,0.0417,(2017) Dual Roles of IL-27 in Cancer Biology and Immunotherapy.,CRLF1,7
+PMID,PMID:28256556,3,65,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",1.36e-06,0.0417,(2017) An inflammatory gene signature distinguishes neurofibroma Schwann cells and macrophages from cells in the normal peripheral nervous system.,CRLF1,7
+PMID,PMID:28883757,3,57,9606,"CLCF1,CNTF,CNTFR","CLCF1,CNTF,CNTFR",9.31e-07,0.0417,(2017) Time-dependent proteomic and genomic alterations in Toll-like receptor-4-activated human chondrocytes: increased expression of lamin AC and annexins.,CRLF1,7
+PMID,PMID:26718832,2,2,9606,"CNTF,CNTFR","CNTF,CNTFR",6.49e-07,0.0417,(2016) Neurotrophin signaling in a genitofemoral nerve target organ during testicular descent in mice.,CRLF1,7
+PMID,PMID:26804344,2,3,9606,"CLCF1,CRLF1","CLCF1,CRLF1",1.08e-06,0.0417,(2016) CrisponiCISS1 syndrome: A case series.,CRLF1,7
+RCTM,HSA-6788467,4,17,9606,"CLCF1,CNTF,CNTFR,CRLF1","CLCF1,CNTF,CNTFR,CRLF1",3.33e-11,7.6e-08,IL-6-type cytokine receptor ligand interactions,CRLF1,7
+RCTM,HSA-449147,6,453,9606,"IL12A,CLCF1,IL27,CNTF,CNTFR,CRLF1","IL12A,CLCF1,IL27,CNTF,CNTFR,CRLF1",1.06e-09,8.08e-07,Signaling by Interleukins,CRLF1,7
+RCTM,HSA-447115,3,56,9606,"IL12A,IL27,CRLF1","IL12A,IL27,CRLF1",8.85e-07,0.0004,Interleukin-12 family signaling,CRLF1,7
+RCTM,HSA-9020956,2,11,9606,"IL27,CRLF1","IL27,CRLF1",8.42e-06,0.0027,Interleukin-27 signaling,CRLF1,7
+WikiPathways,WP5095,3,126,9606,"IL12A,IL27,CNTF","IL12A,IL27,CNTF",9.41e-06,0.0073,Overview of proinflammatory and profibrotic mediators,CRLF1,7
+NetworkNeighborAL,CL:16089,4,25,9606,"IL12A,IL27,CNTF,CNTFR","IL12A,IL27,CNTF,CNTFR",1.32e-10,6.04e-07,"IL-6-type cytokine receptor ligand interactions, and Positive regulation of NK T cell proliferation",CRLF1,7
+NetworkNeighborAL,CL:29453,3,23,9606,"CLCF1,REX1BD,CRLF1","CLCF1,REX1BD,CRLF1",7.11e-08,8.13e-05,"Mostly uncharacterized, incl. CRLF-CLCF1 complex, and Connector enhancer of kinase suppressor of ras 2/3 domain",CRLF1,7
+NetworkNeighborAL,CL:16092,2,6,9606,"CNTF,CNTFR","CNTF,CNTFR",3.03e-06,0.0017,IL-6-type cytokine receptor ligand interactions,CRLF1,7
+NetworkNeighborAL,CL:16115,2,12,9606,"IL12A,IL27","IL12A,IL27",9.82e-06,0.005,"Positive regulation of NK T cell proliferation, and interleukin-27 receptor binding",CRLF1,7
+DISEASES,DOID:0111542,2,2,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",9.27e-08,0.00043,Familial expansile osteolysis,TNFRSF11B,3
+DISEASES,DOID:5408,2,7,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",5.56e-07,0.0013,Pagets disease of bone,TNFRSF11B,3
+KEGG,hsa04060,3,282,9606,"IL17RC,TNFRSF11B,TNFRSF11A","IL17RC,TNFRSF11B,TNFRSF11A",3e-06,0.001,Cytokine-cytokine receptor interaction,TNFRSF11B,3
+KEGG,hsa04380,2,120,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",0.00011,0.0191,Osteoclast differentiation,TNFRSF11B,3
+SMART,SM00208,2,24,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",5.02e-06,0.0041,Tumor necrosis factor receptor / nerve growth factor receptor repeats.,TNFRSF11B,3
+InterPro,IPR022323,2,2,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",9.27e-08,0.00067,Tumour necrosis factor receptor 11,TNFRSF11B,3
+InterPro,IPR001368,2,25,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",5.42e-06,0.0195,TNFR/NGFR cysteine-rich region,TNFRSF11B,3
+PMID,PMID:22380539,3,27,9606,"IL17RC,TNFRSF11B,TNFRSF11A","IL17RC,TNFRSF11B,TNFRSF11A",3.19e-09,0.0164,(2012) The relationship between osteoclastogenic and anti-osteoclastogenic pro-inflammatory cytokines differs in human osteoporotic and osteoarthritic bone tissues.,TNFRSF11B,3
+WikiPathways,WP12,2,16,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",2.36e-06,0.0018,Osteoclast signaling,TNFRSF11B,3
+WikiPathways,WP4786,2,33,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",9.19e-06,0.0036,Type I collagen synthesis in the context of osteogenesis imperfecta,TNFRSF11B,3
+WikiPathways,WP2018,2,55,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",2.46e-05,0.0064,RANKL/RANK signaling pathway,TNFRSF11B,3
+WikiPathways,WP5205,2,80,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",5.12e-05,0.01,Clock-controlled autophagy in bone metabolism,TNFRSF11B,3
+HPO,HP:0003080,2,8,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",6.95e-07,0.0085,Hydroxyprolinuria,TNFRSF11B,3
+HPO,HP:0100670,2,21,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",3.91e-06,0.0198,Coarse metaphyseal trabecularization,TNFRSF11B,3
+HPO,HP:0004437,2,44,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",1.6e-05,0.0325,Cranial hyperostosis,TNFRSF11B,3
+HPO,HP:0006480,2,47,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",1.81e-05,0.0325,Premature loss of teeth,TNFRSF11B,3
+HPO,HP:0003110,3,638,9606,"IL17RC,TNFRSF11B,TNFRSF11A","IL17RC,TNFRSF11B,TNFRSF11A",3.43e-05,0.0465,Abnormality of urine homeostasis,TNFRSF11B,3
+HPO,HP:0003155,2,67,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",3.62e-05,0.0465,Elevated circulating alkaline phosphatase concentration,TNFRSF11B,3
+NetworkNeighborAL,CL:20013,2,11,9606,"TNFRSF11B,TNFRSF11A","TNFRSF11B,TNFRSF11A",1.21e-06,0.0055,"Osteopetrosis, and DC-STAMP-like protein",TNFRSF11B,3

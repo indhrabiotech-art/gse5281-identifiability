@@ -1,0 +1,12 @@
+Claim,Evidence,Verdict
+Three-gene signature shows strong discrimination in the discovery cohort.,GSE48350 training ROC-AUC approximately 0.855.,SUPPORTED
+Three-gene signature generalizes to an independent hippocampal cohort.,GSE5281 external ROC-AUC 0.662.,SUPPORTED_WITH_ATTENUATION
+Three genes are highly stable individual LASSO-selected features.,"Bootstrap selection frequencies: TNFRSF11B 15.15%, ABCA6 9.15%, CRLF1 5.65%.",NOT_SUPPORTED
+ABCA6 preserves direction across brain and blood.,"Positive effect in training, external hippocampus and blood.",SUPPORTED
+CRLF1 preserves direction across evaluated cohorts.,"Positive effects in training, hippocampus and blood.",SUPPORTED
+TNFRSF11B is directionally conserved across brain and blood.,Positive in training and hippocampus; negative in blood.,NOT_SUPPORTED
+ABCA6 adds information beyond age and sex in GSE63060.,Age+Sex AUC 0.631 versus Age+Sex+ABCA6 AUC 0.682; likelihood-ratio p approximately 0.00042.,SUPPORTED_AS_EXPLORATORY
+The full three-gene model is clearly superior to the strongest two-gene alternative.,External AUC 0.662 for the three-gene model versus 0.731 for ABCA6+TNFRSF11B; paired bootstrap Delta AUC = -0.069 with 95% CI -0.159 to 0.278 and P(Delta AUC > 0) = 0.736.,NOT_SUPPORTED
+The signature is clinically validated.,No prospective clinical validation cohort.,NOT_SUPPORTED
+The signature demonstrates cross-tissue biological transportability.,ABCA6 and CRLF1 retain direction; TNFRSF11B shows tissue-dependent reversal.,PARTIALLY_SUPPORTED
+Three genes are individually necessary in every cohort.,Ablation shows cohort-dependent performance.,NOT_SUPPORTED

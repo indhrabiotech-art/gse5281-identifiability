@@ -1,0 +1,6 @@
+Seed_Gene,Mechanistic_Module,Best_FDR,Evidence_Count,Representative_Term
+ABCA6,Cytokine_neurotrophic_signaling,0.00018,2,(2007) Correlation of induction of ATP binding cassette transporter A5 (ABCA5) and ABCB1 mRNAs with differentiation state of human colon tumor.
+ABCA6,Lipid_transport_homeostasis,1.63e-06,17,"ABC-type xenobiotic transporter activity, and ABC transporters in lipid homeostasis"
+CRLF1,Cytokine_neurotrophic_signaling,7.6e-08,79,IL-6-type cytokine receptor ligand interactions
+TNFRSF11B,Cytokine_neurotrophic_signaling,0.001,2,Cytokine-cytokine receptor interaction
+TNFRSF11B,TNFR_RANKL_signaling,0.0018,3,Osteoclast signaling
