@@ -1,6 +1,6 @@
 ================================================================
 GSE5281 LABEL-INDEPENDENT TECHNICAL QC
-Run: 2026-09-10 18:32:51 
+Run: 2026-09-11 06:27:57 
 ================================================================
 
 CEL files: 23 
@@ -33,3 +33,35 @@ Poly-A spike-ins (12 probe sets)
   ROC-AUC separating cohorts on this control alone: 1.000
 
 --- 4. 3'/5' ratios -------------------------------------------
+
+GAPDH 3-5 ratio (log2)  (AFFX-HUMGAPDH/M33197_3_at / AFFX-HUMGAPDH/M33197_5_at)
+  AD      mean 5.651  SD 0.991
+  Control mean 3.761  SD 0.760
+  t p = 0.00012   Wilcoxon p = 0.0004584
+  ROC-AUC separating cohorts: 0.938
+
+ACTB 3-5 ratio (log2)  (AFFX-HSAC07/X00351_3_at / AFFX-HSAC07/X00351_5_at)
+  AD      mean 6.634  SD 0.450
+  Control mean 7.954  SD 0.386
+  t p = 7.537e-07   Wilcoxon p = 8.213e-05
+  ROC-AUC separating cohorts: 0.992
+
+--- 5. RNA degradation slope ----------------------------------
+  AD mean 10.6903   Control mean 8.4558   t p = 6.781e-07
+
+--- 6. RLE and NUSE -------------------------------------------
+
+RLE median
+  AD mean 0.0081   Control mean -0.0086   t p = 0.3463
+
+NUSE median
+  AD mean 1.0034   Control mean 1.0018   t p = 0.7712
+
+=========================== SUMMARY ===========================
+Every metric above is fixed at the bench or is a property of RNA
+handling. Disease biology cannot alter spike-in concentrations, and
+cannot alter the date on which an array was scanned. Where these
+differ between the two cohorts, the difference is technical.
+
+Report the significant ones in Section 3.5 and add a panel to Figure 1.
+Outputs in 04_ML/Technical_QC 
