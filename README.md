@@ -169,4 +169,4 @@ https://doi.org/10.5281/zenodo.22663479
 
 ## Licence
 
-Add a LICENSE file. MIT is conventional for research code.
+MIT. See LICENSE.
