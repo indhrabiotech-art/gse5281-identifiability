@@ -1,0 +1,32 @@
+=========== FINAL CHECKS ===========
+ 2026-09-11 00:13:41 
+
+accessions: 0   characteristics rows: 0 
+GEO gender recovered for 0 of 0 
+
+local vs GEO:
+        GEO
+local    <NA>
+  female   30
+  male     32
+
+GEO vs expression-inferred:
+
+<NA> 
+  62 
+
+the six:
+          GSM   Y_mean      XIST recorded_sex geo_sex inferred_sex
+5  GSM1176215 8.557292  5.662751       female    <NA>            M
+6  GSM1176216 9.017188  6.578540       female    <NA>            M
+10 GSM1176220 8.833317  6.060579       female    <NA>            M
+13 GSM1176223 4.996670 13.007438         male    <NA>            F
+18 GSM1176228 5.348683 13.051557         male    <NA>            F
+43  GSM300255 4.704528 13.264094         male    <NA>            F
+
+no variation to test
+
+---------- corrected nested CV ----------
+mean 0.7559  median 0.7619  SD 0.1599
+2.5-97.5%  0.4286 - 1.0000
+below 0.5: 13 of 250 (5.2%)

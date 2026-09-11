@@ -1,0 +1,2 @@
+training_mean_logit_baseline,external_total_logit_shift,external_mean_logit_after_shift,training_baseline_probability,external_shifted_probability,interpretation
+-0.009,-5.287040431257952,-5.2960404312579525,0.497750015187377,0.00498640877019915,External cohort shows a substantial negative location shift in the locked model's logit.

@@ -1,0 +1,12 @@
+{
+  "n_iterations": 1000,
+  "seed": 2026,
+  "n_candidates": 5342,
+  "observed_transfer_auc": 0.6615384615384615,
+  "observed_within_auc": 0.2,
+  "transfer_null_median": 0.6615384615384615,
+  "transfer_null_p_ge_observed": 0.506,
+  "within_null_median": 0.7692307692307692,
+  "within_null_p_ge_0.90": 0.154,
+  "within_null_p_ge_observed": 0.982
+}

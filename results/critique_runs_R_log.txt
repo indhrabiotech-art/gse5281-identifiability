@@ -1,0 +1,51 @@
+=========== CRITIQUE RUNS (R) ===========
+Run: 2026-09-10 23:56:32 
+
+GSE5281: 23 samples
+         coh
+dx5       Jul2006 Oct2007
+  Control      13       0
+  AD            0      10
+
+
+---------- R1  ComBat ----------
+DEGs before ComBat (FDR<0.05): 5546 
+
+ComBat WITH diagnosis as covariate:
+   ERROR: The covariate is confounded with batch! Remove the covariate and rerun ComBat 
+
+ComBat WITHOUT diagnosis:
+  ran. DEGs after ComBat (FDR<0.05): 0 
+  collapse: 5546 -> 0 
+
+---------- R5  sex inference ----------
+
+ GSE5281   Y genes: RPS4Y1,KDM5D,DDX3Y,UTY 
+sex
+ F  M 
+ 7 16 
+   
+    AD Control
+  F  4       3
+  M  6      10
+
+ GSE48350   Y genes: RPS4Y1,KDM5D,DDX3Y,UTY 
+sex
+ F  M 
+30 32 
+
+GSE48350 inferred vs recorded:
+   
+    female male
+  F     27    3
+  M      3   29
+mismatches: 6 of 62 
+
+---------- R10  GSE5281 distribution by cohort ----------
+median log2 by cohort:
+                        Jul2006                         Oct2007 
+"mean 4.158  range 4.109-4.217" "mean 4.120  range 4.082-4.159" 
+Wilcoxon p = 0.01471 
+cohort ROC-AUC on median alone: 0.800 
+
+=========== R BLOCK DONE ===========

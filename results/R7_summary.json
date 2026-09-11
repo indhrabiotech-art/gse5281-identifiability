@@ -1,0 +1,8 @@
+{
+  "observed_cv_auc": 0.7862745098039216,
+  "null_mean": 0.6065862745098038,
+  "null_median": 0.6333333333333333,
+  "percentile": 0.989,
+  "n_iter": 1000,
+  "matrix": "train_top25var_age_adjusted"
+}

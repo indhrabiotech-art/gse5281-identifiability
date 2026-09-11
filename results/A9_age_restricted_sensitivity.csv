@@ -1,0 +1,2 @@
+youngest_case_age,original_n,original_cases,original_controls,restricted_n,restricted_cases,restricted_controls,controls_removed,case_age_mean,case_age_SD,original_control_age_mean,original_control_age_SD,restricted_control_age_mean,restricted_control_age_SD,restricted_training_AUC,restricted_CV_AUC,external_age_adjustment_possible,external_age_adjustment_reason
+60,49,15,34,35,15,20,14,82.46666666666667,9.014802641581603,62.529411764705884,24.18769445978383,80.8,9.46239092963629,0.9066666666666666,0.8133333333333332,False,GSE5281 hippocampal metadata contains no age column.

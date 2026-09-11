@@ -1,0 +1,57 @@
+=========== CRITIQUE RUNS (Python) ===========
+
+---------- R0  nested-CV leak check ----------
+  89:     ROOT / "04_ML" / "GSE48350_RMA_train_age_adjusted.csv",
+  90:     ROOT / "04_ML" / "GSE48350_RMA_train_age_adjusted",
+  97:     ROOT / "04_ML" / "GSE48350_RMA_test_age_adjusted.csv",
+  104:     ROOT / "04_ML" / "GSE5281_RMA_genelevel_age_adjusted.csv",
+  199:     df = pd.read_csv(path)
+  254:     df = pd.read_csv(path)
+  577: def top_variance_genes(X, n=5342):
+  582:     Returns gene columns with highest variance.
+  620:         -> top variance filtering
+  740:         selected_variance_genes = top_variance_genes(
+  746:             selected_variance_genes
+  750:             selected_variance_genes
+  828:             selected_variance_genes,
+  835:             # Fall back to strongest single feature by training variance.
+  837:                 selected_variance_genes[0]
+  1473:             OUT / "GSE48350_controls_only_age_adjusted_expression.csv"
+  1512:                         "model": "3gene_controls_only_age_adjusted",
+  1522:                 OUT / "three_gene_controls_only_age_adjusted.csv",
+  1561:             # matrix, use the top-variance training genes.
+  1562:             filtered_genes = top_variance_genes(
+  1851:         OUT / "three_gene_controls_only_age_adjusted.csv",
+
+  VERDICT: no pre-filtered matrix read at top level; inspect the loop manually
+
+  training (49, 5342), cases 15 | transfer (23, 21367), cases 10
+
+---------- R2  age-restricted transfer ----------
+  youngest case 60; retained 35 of 49 (15 cases, 20 controls)
+  apparent 0.9067 | 5-fold 0.8267 | TRANSFER 0.6462
+
+---------- R3  folds below 0.5 ----------
+  04_ML/Reviewer_Robustness/nested_cv_fold_results.csv: 13 of 250 folds below 0.5 (5.2%)
+  04_ML/Reviewer_Robustness_V3/nested_cv_results.csv: 16 of 250 folds below 0.5 (6.4%)
+
+---------- R4  Cohen's d with 95% CI ----------
+  ABCA6      discovery  d= 0.990  95% CI  0.380 to  1.842
+  ABCA6      transfer   d= 0.627  95% CI -0.174 to  1.294
+  CRLF1      discovery  d= 0.969  95% CI  0.433 to  1.602
+  CRLF1      transfer   d= 0.130  95% CI -0.606 to  1.169
+  TNFRSF11B  discovery  d= 1.088  95% CI  0.477 to  1.918
+  TNFRSF11B  transfer   d= 0.389  95% CI -0.392 to  1.438
+
+---------- R7  discovery random-panel null (canonical) ----------
+  observed 5-fold CV AUC (canonical matrix): 0.786275
+    200/1000
+    400/1000
+    600/1000
+    800/1000
+    1000/1000
+  null mean 0.6066 SD 0.1080 median 0.6333
+  2.5-97.5%  0.3754 - 0.7667
+  percentile of observed: 0.9890   prop >= observed: 0.0110
+
+=========== PY BLOCK DONE ===========

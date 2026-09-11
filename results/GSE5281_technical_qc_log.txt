@@ -1,0 +1,35 @@
+================================================================
+GSE5281 LABEL-INDEPENDENT TECHNICAL QC
+Run: 2026-09-10 18:32:51 
+================================================================
+
+CEL files: 23 
+matched to metadata: 23 
+grp
+     AD Control 
+     10      13 
+
+--- 1. Scan dates ---------------------------------------------
+         syear
+grp       04 05 06
+  AD       0  3  7
+  Control 13  0  0
+scan dates carrying both classes: 0 of 5 
+
+reading CEL files (this takes a few minutes)
+
+--- 2/3. Spike-in controls ------------------------------------
+
+Hybridisation spike-ins (9 probe sets)
+  AD      mean 10.163  SD 0.447
+  Control mean 10.064  SD 0.627
+  t p = 0.663   Wilcoxon p = 0.5981   Cohen's d = 0.18
+  ROC-AUC separating cohorts on this control alone: 0.569
+
+Poly-A spike-ins (12 probe sets)
+  AD      mean 8.364  SD 1.019
+  Control mean 2.723  SD 0.084
+  t p = 2.647e-08   Wilcoxon p = 6.331e-05   Cohen's d = 7.80
+  ROC-AUC separating cohorts on this control alone: 1.000
+
+--- 4. 3'/5' ratios -------------------------------------------

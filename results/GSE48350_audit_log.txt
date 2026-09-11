@@ -1,0 +1,85 @@
+================================================================
+GSE48350 DISCOVERY COHORT IDENTIFIABILITY AUDIT
+Run: 2026-09-10 18:03:19 
+================================================================
+
+hippocampal samples: 62 
+first few: GSM1176211, GSM1176212, GSM1176213 
+
+metadata file: 02_Metadata/GSE48350_metadata_grouped.csv 
+columns: GSM, Title, Individual, Brain_region, Sex, Age, Diagnosis, subject_group_id 
+key column: GSM   diagnosis column: Diagnosis 
+
+dx
+     AD Control 
+     19      43 
+
+--- 1. Accession block structure ------------------------------
+  AD       n=19   GSM1176211 - GSM1176229
+  Control  n=43   GSM300168 - GSM300339
+  accession ranges overlap: FALSE 
+  >>> Cases and controls occupy DISJOINT accession blocks.
+  >>> This indicates deposition in separate submissions.
+
+--- 2. GEO series metadata ------------------------------------
+reading 00_GEO_cache/GSE48350_series_matrix.txt.gz 
+submission-date lines not found in header
+
+--- 3. CEL scan dates (technical batch) -----------------------
+CEL files found: 62 
+matched to samples: 62 of 62 
+
+scan year-month by diagnosis:
+         ym
+dx        01/10/06 01/13/06 01/18/06 02/02/06 02/03/06 02/08/06 03/08/06
+  AD             1        2        2        1        2        2        0
+  Control        1        3        2        2        3        6        1
+         ym
+dx        03/30/06 06/22/06 06/23/06 10/23/07 10/24/07 11/23/05 11/30/05
+  AD             0        3        1        0        0        0        1
+  Control        2        2        0        2        5        1       10
+         ym
+dx        12/02/05 12/05/05
+  AD             1        3
+  Control        0        3
+
+--- 4. Design identifiability ---------------------------------
+
+Batch = accession block
+  design 62 x 3, rank 2, rank deficient: TRUE
+         batch
+diagnosis GSM11xxxxx block GSM3xxxxx block
+  AD                    19               0
+  Control                0              43
+  diagnosis perfectly nested within batch: TRUE 
+
+Batch = CEL scan date
+  design 62 x 17, rank 17, rank deficient: FALSE
+         batch
+diagnosis 01/10/06 01/13/06 01/18/06 02/02/06 02/03/06 02/08/06 03/08/06
+  AD             1        2        2        1        2        2        0
+  Control        1        3        2        2        3        6        1
+         batch
+diagnosis 03/30/06 06/22/06 06/23/06 10/23/07 10/24/07 11/23/05 11/30/05
+  AD             0        3        1        0        0        0        1
+  Control        2        2        0        2        5        1       10
+         batch
+diagnosis 12/02/05 12/05/05
+  AD             1        3
+  Control        0        3
+  diagnosis perfectly nested within batch: FALSE 
+
+======================= VERDICT ========================
+IDENTIFIABLE. Diagnosis is nested within accession block, but accession
+block records deposition, not measurement. Under the technical variable
+(CEL scan date) the design is of full rank and diagnosis effects are
+separately estimable.
+
+Manuscript actions:
+  1. Add a Results subsection reporting this audit as a positive control.
+  2. Delete the Limitations paragraph saying the audit was not done.
+  3. Sharpen the recommendation: accession structure alone is not
+     sufficient evidence of confounding; use an instrument-level
+     variable such as the CEL header scan date.
+
+Outputs in 04_ML/Discovery_Audit 

@@ -1,0 +1,37 @@
+=========== fRMA SENSITIVITY (A5) ===========
+ 2026-09-11 00:35:48 
+
+locked coefficient file: 04_ML/Final_Model/GSE48350_final_3gene_coefficients.csv 
+       gene coefficient
+1     ABCA6   0.4754237
+2     CRLF1   0.3797077
+3 TNFRSF11B   0.4394070
+locked model refit on canonical training matrix
+  intercept -1.1644  coefficients 0.9845, 0.8114, 0.8304 
+  training scaler centre: 5.3316, 7.9671, 5.3882 
+  training scaler scale : 0.9789, 0.7801, 0.6801 
+
+transfer cohort: 23 samples, 10 cases
+observed prevalence 0.4348 
+
+--- transfer performance by preprocessing scheme ---
+1. RMA (manuscript)          AUC 0.6538 | mean p 0.00001 | Brier 0.4348 | CITL +11.666
+
+running fRMA (several minutes)
+  CEL files matched: 23 of 23 
+  fRMA genes: 21367 
+2. fRMA (locked reference)   AUC 0.6615 | mean p 0.00148 | Brier 0.4332 | CITL +6.713
+3. quantile-normalised to training AUC 0.6692 | mean p 0.00835 | Brier 0.4261 | CITL +5.139
+
+=========== INTERPRETATION ===========
+mean predicted probability: 0.00001 under RMA, 0.00835 at best
+observed prevalence 0.4348
+
+CALIBRATION DOES NOT RECOVER. The collapse survives locked
+preprocessing, so it is not an artefact of separate normalisation.
+This strengthens Section 3.7 and pre-empts the obvious objection.
+
+AUC is expected to change little: rank-preserving transformations
+cannot alter it, which is the point of Section 4.4.
+
+Outputs in 04_ML/fRMA_Sensitivity 

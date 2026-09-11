@@ -1,0 +1,59 @@
+=========== DATA QUALITY AUDIT ===========
+ 2026-09-11 06:19:53 
+
+--------- 1. DUPLICATE ARRAYS ---------
+
+ GSE48350_RMA_genelevel.csv  n = 62   pairs above 0.999: 1 
+   GSM1176215 / GSM300182  rho=1.000000  bit-identical=TRUE
+
+ GSE5281_RMA_genelevel.csv  n = 23   pairs above 0.999: 0 
+
+--------- 2. INDIVIDUAL-ID COLLISIONS (all 253) ---------
+individual IDs in BOTH blocks: 15 
+
+           GSM Individual           Brain_region    Sex Age Diagnosis
+175 GSM1176197         15      entorhinal_cortex female  86        AD
+16   GSM300181         15      entorhinal_cortex   male  80   Control
+193 GSM1176215         15            hippocampus female  86        AD
+17   GSM300182         15            hippocampus   male  80   Control
+211 GSM1176233         15     post-central_gyrus female  86        AD
+18   GSM300183         15     post-central_gyrus   male  80   Control
+235 GSM1176257         15 superior_frontal_gyrus female  86        AD
+173  GSM350078         15 superior_frontal_gyrus   male  80   Control
+           blk
+175   AD_block
+16  Ctrl_block
+193   AD_block
+17  Ctrl_block
+211   AD_block
+18  Ctrl_block
+235   AD_block
+173 Ctrl_block
+
+paired by region:
+  ind 15 entorhinal_cortex        GSM300181 (Control) <-> GSM1176197 (AD)
+  ind 15 hippocampus              GSM300182 (Control) <-> GSM1176215 (AD)
+  ind 15 post-central_gyrus       GSM300183 (Control) <-> GSM1176233 (AD)
+  ind 15 superior_frontal_gyrus   GSM350078 (Control) <-> GSM1176257 (AD)
+
+--------- 3. SEX MISMATCHES vs DUPLICATION ---------
+mismatched samples: GSM1176215, GSM1176216, GSM1176220, GSM1176223, GSM1176228, GSM300255 
+
+  GSM1176215   closest: GSM300182    rho=1.00000  <-- DUPLICATE
+  GSM1176216   closest: GSM1176219   rho=0.98187  
+  GSM1176220   closest: GSM1176214   rho=0.98205  
+  GSM1176223   closest: GSM1176228   rho=0.97962  
+  GSM1176228   closest: GSM300187    rho=0.98299  
+  GSM300255    closest: GSM1176228   rho=0.98085  
+
+individual IDs of mismatched samples: 15, 24, 11, 7, 5, 67 
+of which appear in both blocks: 15 
+
+--------- 4. IMPACT ON INTERNAL ESTIMATES ---------
+                  apparent    cv5  n cases
+as_deposited        0.8529 0.8118 49    15
+duplicate_removed   0.9139 0.8613 48    14
+
+Apparent AUC changes by 0.0609 when the mislabelled duplicate is removed.
+
+Outputs in 04_ML/Data_Quality 
